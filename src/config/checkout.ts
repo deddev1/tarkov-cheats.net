@@ -71,8 +71,8 @@ export function resolveCheckoutHref(href: string): string {
     return checkoutPath('ugc');
   }
   if (
-    href.includes('%2Fproducts%2Fescape-from-tarkov-cheats') ||
-    href.includes('/products/escape-from-tarkov-cheats') ||
+    href.includes('%2Fproducts%2Fescape-from-tarkov') ||
+    href.includes('/products/escape-from-tarkov') ||
     href.includes('%2Fproducts%2Ftarkov') ||
     href.includes('/products/tarkov')
   ) {
