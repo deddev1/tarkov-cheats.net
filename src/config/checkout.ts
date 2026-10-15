@@ -70,7 +70,12 @@ export function resolveCheckoutHref(href: string): string {
   if (href.includes('%2Fproducts%2Fugc') || href.includes('/products/ugc')) {
     return checkoutPath('ugc');
   }
-  if (href.includes('%2Fproducts%2Ftarkov') || href.includes('/products/tarkov')) {
+  if (
+    href.includes('%2Fproducts%2Fescape-from-tarkov-cheats') ||
+    href.includes('/products/escape-from-tarkov-cheats') ||
+    href.includes('%2Fproducts%2Ftarkov') ||
+    href.includes('/products/tarkov')
+  ) {
     return checkoutPath('tarkov');
   }
 

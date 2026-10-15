@@ -1,6 +1,6 @@
 /** Checkout destinations keyed by internal product id (no affiliate codes). */
 export const CHECKOUT_URLS = {
-  tarkov: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Ftarkov',
+  tarkov: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fescape-from-tarkov-cheats',
   skinChanger: 'https://zadeyo.com/products/skin-changer',
   hwidSpoofer: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fhwid-spoofer',
   ugc: 'https://zadeyo.com/products/ugc',

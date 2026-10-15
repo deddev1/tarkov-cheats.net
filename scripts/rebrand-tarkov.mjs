@@ -50,9 +50,9 @@ const REPLACEMENTS = [
   // Product / checkout paths
   ['/products/aion-2-cheats', '/products/tarkov-cheats'],
   ['products/aion-2-cheats', 'products/tarkov-cheats'],
-  ['https://zadeyo.com/products/aion-2', 'https://zadeyo.com/products/tarkov'],
-  ['%2Fproducts%2Faion-2', '%2Fproducts%2Ftarkov'],
-  ['/products/aion-2', '/products/tarkov'],
+  ['https://zadeyo.com/products/aion-2', 'https://zadeyo.com/products/escape-from-tarkov-cheats'],
+  ['%2Fproducts%2Faion-2', '%2Fproducts%2Fescape-from-tarkov-cheats'],
+  ['/products/aion-2', '/products/escape-from-tarkov-cheats'],
   ['/go/aion-2/', '/go/tarkov/'],
   ['/go/aion-2', '/go/tarkov'],
 
