@@ -117,29 +117,6 @@ html::-webkit-scrollbar,
   padding-bottom: 4.5rem;
 }
 
-#hero .hero-bg-image {
-  transform: scale(1.04);
-  filter: brightness(0.82) saturate(0.55) contrast(0.92);
-}
-
-#hero .hero-bg-dim {
-  background:
-    linear-gradient(180deg, rgba(6, 8, 12, 0.42) 0%, rgba(6, 8, 12, 0.28) 45%, rgba(6, 8, 12, 0.68) 100%),
-    linear-gradient(90deg, rgba(6, 8, 12, 0.45) 0%, rgba(6, 8, 12, 0.12) 52%, rgba(6, 8, 12, 0.4) 100%);
-}
-
-/* Light mode: wash hero to a pale surface so near-black copy stays readable */
-html:not(.dark) #hero .hero-bg-image {
-  filter: brightness(1.2) saturate(0.4) contrast(0.95);
-  opacity: 0.38;
-}
-
-html:not(.dark) #hero .hero-bg-dim {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.62) 42%, rgba(255, 255, 255, 0.96) 100%),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 52%, rgba(255, 255, 255, 0.65) 100%);
-}
-
 html:not(.dark) body {
   color: #0a0a0a;
 }

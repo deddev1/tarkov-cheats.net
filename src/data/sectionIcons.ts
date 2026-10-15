@@ -56,7 +56,7 @@ export const heroStatusPills: { icon: IconName; label: string }[] = [
   { icon: 'mapHack', label: 'ESP Wallhack' },
   { icon: 'support247', label: '24/7 Support' },
   { icon: 'instantDelivery', label: 'Instant Delivery' },
-  { icon: 'rankedSafe', label: 'Ranked Safe' },
+  { icon: 'rankedSafe', label: 'Labs Safe' },
   { icon: 'triggerBot', label: 'Trigger Bot' },
   { icon: 'boneSelect', label: 'Bone Select' },
   { icon: 'liveStatus', label: 'Live Status' },
@@ -98,7 +98,7 @@ export const productAcquisitionStepIcons: IconName[] = [
 /** Product detail requirement tiles — prefer compat-style icons where mapped */
 export const productRequirementIcons: Partial<Record<IconName, IconName>> = {
   reqWindows: 'compatWindows',
-  reqEpic: 'compatEpic',
+  reqBsg: 'compatBsg',
   reqSettings: 'compatPackage',
   reqWifi: 'compatWifi',
   reqCpu: 'compatMonitor',
@@ -116,7 +116,7 @@ export function requirementDisplayIcon(icon: IconName): IconName {
 export const compatibilityIcons: IconName[] = [
   'compatWindows',
   'compatPackage',
-  'compatEpic',
+  'compatBsg',
   'compatMonitor',
   'compatRefresh',
   'compatWifi',

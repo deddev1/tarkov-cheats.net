@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { resolveDistDir } from './dist-dir.mjs';
 
-/** Drop source PNGs from dist — pages serve WebP variants only. */
+/** Loot source PNGs from dist — pages serve WebP variants only. */
 const distImages = path.join(resolveDistDir(), 'images');
 let removed = 0;
 let bytes = 0;

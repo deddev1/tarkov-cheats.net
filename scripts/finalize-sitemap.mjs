@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { resolveDistDir } from './dist-dir.mjs';
 
-const SITE = 'https://fortnite-cheats.com';
+const SITE = 'https://tarkov-cheats.net';
 const dist = resolveDistDir();
 
 function loadUrlsetXml(dir) {
@@ -58,7 +58,7 @@ function parseUrls(xml) {
   return urls;
 }
 
-/** Normalize for GSC: https origin, trailing slash, drop junk. */
+/** Normalize for GSC: https origin, trailing slash, loot junk. */
 function normalizeUrl(loc) {
   let url;
   try {
@@ -67,7 +67,7 @@ function normalizeUrl(loc) {
     return null;
   }
   if (url.protocol !== 'https:') url.protocol = 'https:';
-  url.hostname = 'fortnite-cheats.com';
+  url.hostname = 'tarkov-cheats.net';
   url.hash = '';
   url.search = '';
   let pathname = url.pathname;
