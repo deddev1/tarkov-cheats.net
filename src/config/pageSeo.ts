@@ -25,16 +25,6 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
     description:
       'Tarkov Elite cheats with player ESP wallhack, aimbot, loot ESP, no recoil, skin changer and priority BattlEye updates for live PMC raids on Windows PC.',
   },
-  '/products/tarkov-cheats/lite/': {
-    title: 'Tarkov Lite Cheats | ESP Wallhack & Radar',
-    description:
-      'Escape from Tarkov Lite: player ESP, wallhack, loot ESP and radar without aimbot. Stream-proof overlays for Customs, Woods, Labs and Factory on PC.',
-  },
-  '/products/tarkov-cheats/pro/': {
-    title: 'Tarkov Pro Cheats | Aimbot + ESP Wallhack',
-    description:
-      'Escape from Tarkov Pro adds humanized aimbot, sticky aim and bone priority on top of full ESP wallhack. Tuned for Labs, Factory and PMC raids on PC.',
-  },
   '/products/tarkov-cheats/utilities/': {
     title: 'Tarkov Utilities | HWID Spoofer & Skin Changer',
     description:

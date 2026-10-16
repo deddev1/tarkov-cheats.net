@@ -40,7 +40,7 @@ export function organizationSchema() {
     '@type': 'Organization',
     name: 'Tarkov Cheats',
     url: `${SITE_ORIGIN}/`,
-    logo: `${SITE_ORIGIN}/logo.svg`,
+    logo: `${SITE_ORIGIN}/favicon-512.png`,
     email: SUPPORT_EMAIL,
     ...(sameAs.length > 0 ? { sameAs } : {}),
     contactPoint: [
@@ -147,7 +147,12 @@ export function productSchema(input: {
   offerUrl: string;
   image?: string;
   sku?: string;
+  /** Lowest list price in USD (required for Product rich results). */
+  priceUsd?: number;
 }) {
+  const priceValidUntil = new Date();
+  priceValidUntil.setFullYear(priceValidUntil.getFullYear() + 1);
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -161,8 +166,15 @@ export function productSchema(input: {
     ...(input.image ? { image: absoluteAssetUrl(input.image) } : {}),
     offers: {
       '@type': 'Offer',
-      url: offerUrl(input.offerUrl),
+      // Prefer the on-site product URL so Google does not chase affiliate hops.
+      url: offerUrl(input.url),
       priceCurrency: 'USD',
+      ...(typeof input.priceUsd === 'number'
+        ? {
+            price: input.priceUsd.toFixed(2),
+            priceValidUntil: priceValidUntil.toISOString().slice(0, 10),
+          }
+        : {}),
       availability: 'https://schema.org/InStock',
       seller: {
         '@type': 'Organization',
@@ -216,7 +228,9 @@ export function articleSchema(input: {
       name: 'Tarkov Cheats',
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_ORIGIN}/logo.svg`,
+        url: `${SITE_ORIGIN}/favicon-512.png`,
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: {

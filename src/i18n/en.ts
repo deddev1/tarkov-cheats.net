@@ -507,7 +507,7 @@ export const en: Translations = {
         num: '03',
         phase: 'Loader',
         title: 'Launch and set up',
-        desc: 'Download from the portal, turn on modules, and test in a offline raid or offline raid.',
+        desc: 'Download from the portal, turn on modules, and test in an offline raid.',
       },
       {
         num: '04',

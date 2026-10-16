@@ -29,7 +29,7 @@ You verify the domain at your DNS provider—no HTML meta tags in the repo.
 | tarkov cheats / EFT cheats (broad) | `/` |
 | buy tarkov cheats / products | `/products/tarkov-cheats/` |
 | elite / aimbot + loot assist | `/products/tarkov-cheats/elite/` |
-| lite / pro | `/products/tarkov-cheats/lite/`, `/products/tarkov-cheats/pro/` |
+| lite vs pro comparison | `/blog/tarkov-lite-vs-pro/` |
 | hwid spoofer | `/products/tarkov-cheats/hwid-spoofer/` |
 | skin changer | `/products/tarkov-cheats/unlock-all/` |
 | ESP wallhack / aimbot guides | `/blog/…` entries in `pageSeo.ts` |

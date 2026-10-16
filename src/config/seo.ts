@@ -4,7 +4,8 @@ import { getPageSeoEntry } from './pageSeo';
 
 export const SITE_ORIGIN = `https://${t.site.domain}`;
 
-export const DEFAULT_OG_IMAGE = '/images/gameplay/tarkov-esp-wallhack.png';
+/** Social share image — exact 1200×630 for Open Graph / Twitter. */
+export const DEFAULT_OG_IMAGE = '/images/og-default.jpg';
 
 export const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID as string | undefined;
 
@@ -48,8 +49,33 @@ export function pageTitle(keyword: string, brand = t.site.name): string {
   const suffix = ` | ${brand}`;
   const max = 60;
   if (`${keyword}${suffix}`.length <= max) return `${keyword}${suffix}`;
-  const trimmed = keyword.slice(0, Math.max(20, max - suffix.length - 1)).trim();
-  return `${trimmed}${suffix}`;
+  const budget = Math.max(20, max - suffix.length);
+  const clipped = keyword.slice(0, budget);
+  const atWord = clipped.replace(/\s+\S*$/, '').replace(/[,:;–—-]+$/u, '').trim();
+  return `${atWord.length >= 20 ? atWord : clipped.trim()}${suffix}`;
+}
+
+/** SERP-safe title + description for forum threads (often thin excerpts / long questions). */
+export function forumPageSeo(input: {
+  title: string;
+  excerpt: string;
+  body: string[];
+}): { title: string; description: string } {
+  const title = pageTitle(input.title);
+  const pool = [input.excerpt, ...input.body]
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  let description = pool;
+  if (description.length < 120) {
+    description = `${description} Escape from Tarkov cheat setup help on tarkov-cheats.net.`.trim();
+  }
+  if (description.length > 160) {
+    const clipped = description.slice(0, 157);
+    description = `${clipped.replace(/\s+\S*$/, '').replace(/[,:;–—-]+$/u, '').trim()}…`;
+  }
+  return { title, description };
 }
 
 export const DEFAULT_OG_IMAGE_WIDTH = 1200;
