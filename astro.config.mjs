@@ -12,6 +12,8 @@ export default defineConfig({
     '/cheats/pro/': '/products/tarkov-cheats/',
     '/cheats/elite/': '/products/tarkov-cheats/elite/',
     '/cheats/compare/': '/blog/tarkov-lite-vs-pro/',
+    '/products/tarkov-cheats/lite/': '/products/tarkov-cheats/',
+    '/products/tarkov-cheats/pro/': '/products/tarkov-cheats/',
     '/products/dota-2-cheats/': '/products/tarkov-cheats/',
     '/products/dota-2-cheats/elite/': '/products/tarkov-cheats/elite/',
     '/products/dota-2-cheats/utilities/': '/products/tarkov-cheats/utilities/',
@@ -35,7 +37,14 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/404') && !page.includes('/go/'),
+      filter: (page) =>
+        !page.includes('/404') &&
+        !page.includes('/go/') &&
+        !page.includes('/products/fortnite-cheats') &&
+        !page.includes('/products/aion-2-cheats') &&
+        !page.includes('/products/dota-2-cheats') &&
+        !page.includes('/products/tarkov-cheats/lite') &&
+        !page.includes('/products/tarkov-cheats/pro'),
       serialize: sitemapSerialize,
     }),
   ],

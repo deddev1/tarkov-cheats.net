@@ -32,10 +32,15 @@ ok('Forum meta description length 120–160', fDesc.length >= 120 && fDesc.lengt
 const productsXml = fs.readFileSync(path.join(dist, 'sitemap-products.xml'), 'utf8');
 ok('Sitemap excludes legacy fortnite/aion/dota product URLs', !/fortnite|aion-2|dota-2/.test(productsXml));
 
+const redirectsSrc = [
+  fs.readFileSync('astro.config.mjs', 'utf8'),
+  fs.readFileSync('public/_redirects', 'utf8'),
+  fs.readFileSync('scripts/redirects.mjs', 'utf8'),
+].join('\n');
 ok(
-  'Broken lite/pro product URLs are redirected (Astro redirect stubs)',
-  fs.existsSync(path.join(dist, 'products/tarkov-cheats/lite/index.html')) ||
-    fs.readFileSync('astro.config.mjs', 'utf8').includes("'/products/tarkov-cheats/lite/'"),
+  'Broken lite/pro product URLs are redirected',
+  redirectsSrc.includes('/products/tarkov-cheats/lite') &&
+    redirectsSrc.includes('/products/tarkov-cheats/pro'),
 );
 ok(
   'Blog no longer links to missing /lite/ or /pro/ product pages',

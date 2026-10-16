@@ -30,8 +30,8 @@ function link(text: string, href: string): string {
 }
 
 const elite = link('Tarkov Elite', productPath('elite'));
-const lite = link('Lite tier (ESP wallhack & ESP)', ROUTES.products);
-const pro = link('Pro tier (scripts included)', ROUTES.products);
+const lite = link('Lite awareness (ESP wallhack)', ROUTES.products);
+const pro = link('Pro aimbot tier', ROUTES.products);
 const productsHub = link('Escape from Tarkov products', ROUTES.products);
 const hwid = link('HWID Spoofer', productPath('hwid-spoofer'));
 const ugc = link('UGC', productPath('ugc'));
@@ -87,7 +87,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'esp',
     icon: 'faqWhatIsEsp',
     q: 'What is Escape from Tarkov ESP wallhack / ESP?',
-    a: `ESP wallhack and player ESP show enemy positions, loot piles, loot and camps through contested Labs terrain. ${lite} covers awareness overlays. ${pro} and ${elite} add script modules on top.`,
+    a: `ESP wallhack and player ESP show enemy positions, loot piles, containers and extracts through contested Labs terrain. ${lite} covers awareness overlays. ${pro} and ${elite} add aimbot modules on top.`,
     scopes: ['lite', 'pro', 'elite'],
   },
   {
@@ -95,7 +95,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'esp',
     icon: 'faqEspVsScripts',
     q: 'What is the difference between ESP wallhack and aimbot?',
-    a: `ESP wallhack and ESP are information overlays—they do not cast abilities. Aimbot, Smooth Aim and Sticky Aim are aimbot on ${pro} and ${elite}. You can run awareness-only on ${lite}.`,
+    a: `ESP wallhack is information only—it does not move your aim. Aimbot, Smooth Aim and Sticky Aim are aim assistance on ${pro} and ${elite}. You can run awareness-only on ${lite}.`,
   },
   {
     id: 'which-tier-esp',
@@ -206,7 +206,7 @@ export const siteFaqs: SiteFaqItem[] = [
     topic: 'plans',
     icon: 'faqWhoLite',
     q: 'Who should stay on Lite?',
-    a: `Players who only want map awareness—ESP, loot piles, loot—and will not touch aimbot automation. If you keep enabling combo aimbot, buy ${pro} instead.`,
+    a: `Players who only want map awareness—ESP, loot piles and containers—and will not touch aimbot automation. If you keep enabling aimbot, buy ${pro} instead.`,
     scopes: ['lite'],
   },
   {
@@ -360,7 +360,7 @@ const blogTopicFaqs: Record<string, SiteFaqItem[]> = {
       topic: 'blog',
       icon: 'faqBlogGuideTier',
       q: 'Which tier matches this guide?',
-      a: `Awareness guides → ${lite}. Script and combo guides → ${pro}. Bot and kill-steal topics → ${elite}.`,
+      a: `Awareness guides → ${lite}. Aimbot and raid-preset guides → ${pro}. Loot-assist and Elite topics → ${elite}.`,
     },
     {
       id: 'blog-guide-status',

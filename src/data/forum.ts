@@ -90,7 +90,7 @@ const additionalGuidePosts: ForumPost[] = [
     tip: 'Keep a note of each preset so you can roll back to the last Labs-safe aimbot setup.',
   }),
   guideDiscussion({
-    slug: 'how-to-practice-auto-combos', title: 'What is a good way to practice Tarkov aimbot?', upvotes: 29,
+    slug: 'how-to-practice-auto-combos', title: 'What is a good way to practice Tarkov aimbot offline?', upvotes: 29,
     excerpt: 'Use offline Escape from Tarkov raids to drill AR, SMG and sniper aimbot profiles with repeatable resets before enabling aim assist in live PMC queues.',
     category: 'Guides & Builds', categoryTone: 'blue', sourceTitle: 'Escape from Tarkov aimbot combat guide', sourcePath: '/blog/tarkov-aimbot-combat-guide/',
     answer: 'Pick one weapon class and one aimbot profile at a time. The guide walks through target selection, bone priority and smoothness for live raids.',
