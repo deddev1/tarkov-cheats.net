@@ -10,7 +10,7 @@ export const en: Translations = {
     domain: 'tarkov-cheats.net',
     title: 'Tarkov Cheats | ESP, Aimbot & HWID for EFT',
     description:
-      'Buy Escape from Tarkov cheats for PC. Player ESP, wallhack, loot ESP, radar, aimbot and HWID spoofer for PMC raids, Labs and Factory. BattlEye status-checked.',
+      'Buy Escape from Tarkov cheats for PC. Player ESP, wallhack, loot ESP, radar, aimbot and HWID spoofer for PMC raids, Labs and Factory.',
     discord: DISCORD_URL,
   },
   nav: [

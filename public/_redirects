@@ -1,3 +1,12 @@
+# Host canonicalization → apex https://tarkov-cheats.net
+https://www.tarkov-cheats.net/*  https://tarkov-cheats.net/:splat  301
+http://tarkov-cheats.net/*       https://tarkov-cheats.net/:splat  301
+http://www.tarkov-cheats.net/*   https://tarkov-cheats.net/:splat  301
+https://tarkov-cheats.com/*      https://tarkov-cheats.net/:splat  301
+https://www.tarkov-cheats.com/*  https://tarkov-cheats.net/:splat  301
+http://tarkov-cheats.com/*       https://tarkov-cheats.net/:splat  301
+http://www.tarkov-cheats.com/*   https://tarkov-cheats.net/:splat  301
+
 # Checkout (same-tab 302 → Zadeyo)
 /go/tarkov  https://zadeyo.com/go/QRH?to=%2Fproducts%2Fescape-from-tarkov  302
 /go/tarkov/  https://zadeyo.com/go/QRH?to=%2Fproducts%2Fescape-from-tarkov  302

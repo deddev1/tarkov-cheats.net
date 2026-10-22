@@ -1,6 +1,6 @@
 /**
  * Central titles/descriptions for SEO routes on https://tarkov-cheats.net
- * Titles: ~50–60 characters. Descriptions: ~150–160 characters.
+ * Titles: ~50–60 characters. Descriptions: ~120–155 characters.
  * Primary keywords: Tarkov cheats, Escape from Tarkov, ESP, aimbot, loot ESP, BattlEye.
  */
 
@@ -13,12 +13,12 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
     title: 'Tarkov Cheats | ESP, Aimbot & HWID for EFT',
     description:
-      'Buy Escape from Tarkov cheats for PC. Player ESP, wallhack, loot ESP, radar, aimbot and HWID spoofer for PMC raids, Labs and Factory. BattlEye status-checked.',
+      'Buy Escape from Tarkov cheats for PC. Player ESP, wallhack, loot ESP, radar, aimbot and HWID spoofer for PMC raids, Labs and Factory.',
   },
   '/products/tarkov-cheats/': {
     title: 'Buy Tarkov Cheats | Elite, HWID & Skin Changer',
     description:
-      'Shop Escape from Tarkov cheat tiers on tarkov-cheats.net—Elite ESP & aimbot, HWID spoofer, UGC recovery and skin changer for Customs, Labs, Factory and Arena.',
+      'Shop Escape from Tarkov cheat tiers—Elite ESP & aimbot, HWID spoofer, UGC recovery and skin changer for Customs, Labs, Factory and Arena.',
   },
   '/products/tarkov-cheats/elite/': {
     title: 'Tarkov Elite Cheats | ESP, Aimbot & Loot Assist',
@@ -175,7 +175,7 @@ export function auditPageSeoLengths(): { path: string; titleLen: number; descLen
   return Object.entries(PAGE_SEO).map(([path, entry]) => {
     const titleLen = entry.title.length;
     const descLen = entry.description.length;
-    const ok = titleLen >= 40 && titleLen <= 62 && descLen >= 120 && descLen <= 165;
+    const ok = titleLen >= 40 && titleLen <= 62 && descLen >= 120 && descLen <= 155;
     return { path, titleLen, descLen, ok };
   });
 }

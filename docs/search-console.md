@@ -2,6 +2,22 @@
 
 You verify the domain at your DNS provider—no HTML meta tags in the repo.
 
+## Host redirects (Cloudflare)
+
+Canonical host is apex **`https://tarkov-cheats.net`** (no www).
+
+1. On the **`tarkov-cheats.net`** zone: ensure www → apex 301 (also in `public/_redirects` for this project).
+2. On the **`tarkov-cheats.com`** zone (if you own it): Redirect Rules / Bulk Redirects must send both apex and www `.com` to `https://tarkov-cheats.net/$1` — **not** to `https://www.tarkov-cheats.com/`.
+3. After deploy, smoke-check:
+
+```bash
+curl -sI https://www.tarkov-cheats.net/ | head -n 5
+curl -sI https://tarkov-cheats.com/ | head -n 5
+curl -sI https://tarkov-cheats.net/ | grep -i content-type
+```
+
+Expect 301 Location to `https://tarkov-cheats.net/...` and `Content-Type: text/html; charset=utf-8` on the apex HTML response.
+
 ## Setup (once)
 
 1. Open [Google Search Console](https://search.google.com/search-console) and add the **domain** property for `tarkov-cheats.net` if it is not already there.

@@ -5,8 +5,6 @@ import Icon from "./icons/Icon.astro";
 import { Button } from "@/components/starwind/button";
 import {
   Card,
-  CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/starwind/card";
@@ -19,18 +17,18 @@ const lastRowIndex = why.rows.length - 1;
   <div class="mx-auto max-w-6xl px-5">
     <header class="section-header section-header--wide">
       <p class="section-header__eyebrow">{why.eyebrow}</p>
-      <h1 id="why-title" class="section-header__title">{why.title}</h1>
+      <h2 id="why-title" class="section-header__title">{why.title}</h2>
       <p class="section-header__subtitle">{why.subtitle}</p>
     </header>
 
-    {/* Desktop comparison — centered, reference-style columns */}
+    {/* Single comparison markup — title/desc once; scrolls on small viewports */}
     <div
-      class="mt-14 hidden justify-center lg:flex"
+      class="mt-14 flex justify-center overflow-x-auto pb-2"
       role="table"
       aria-label="Tarkov Cheats compared with typical providers"
     >
       <div
-        class="why-compare-layout grid w-full max-w-4xl grid-cols-[minmax(0,1fr)_9.25rem_9.25rem] items-stretch gap-x-10 xl:max-w-5xl xl:gap-x-14"
+        class="why-compare-layout grid w-full min-w-[36rem] max-w-4xl grid-cols-[minmax(0,1fr)_9.25rem_9.25rem] items-stretch gap-x-10 xl:max-w-5xl xl:gap-x-14"
       >
         <div
           class="why-compare-features flex min-w-0 flex-col pe-2"
@@ -122,42 +120,6 @@ const lastRowIndex = why.rows.length - 1;
       </div>
     </div>
 
-    {/* Mobile / tablet stacked rows */}
-    <ul class="mt-10 space-y-4 lg:hidden" role="list">
-      {
-        why.rows.map((row) => (
-          <li>
-            <Card class="gap-0 overflow-hidden py-0">
-              <CardHeader class="card-title-band pb-4 pt-5">
-                <CardTitle class="text-base normal-case leading-snug">
-                  {row.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent class="pb-4 pt-4">
-                <p class="text-sm leading-relaxed text-muted-foreground">
-                  {row.desc}
-                </p>
-              </CardContent>
-              <CardFooter class="flex flex-wrap items-center justify-between gap-3">
-                <div class="flex items-center gap-2 text-sm">
-                  <span class="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary/15 ring-1 ring-primary/40">
-                    <Icon name="circleCheck" size={18} />
-                  </span>
-                  <span class="font-medium text-foreground">{why.usLabel}</span>
-                </div>
-                <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                  <span class="flex size-9 shrink-0 items-center justify-center rounded-full bg-muted ring-1 ring-border">
-                    <Icon name="x" size={16} />
-                  </span>
-                  <span>{why.otherLabel}</span>
-                </div>
-              </CardFooter>
-            </Card>
-          </li>
-        ))
-      }
-    </ul>
-
     <div
       class="mt-16 grid max-w-5xl gap-10 border-t border-border pt-12 text-left sm:grid-cols-3 sm:gap-8 lg:mx-auto lg:text-center"
       aria-label="Platform metrics"
@@ -189,7 +151,7 @@ const lastRowIndex = why.rows.length - 1;
   <div class="mx-auto max-w-6xl px-5 md:px-6">
     <header class="section-header section-header--wide deployment-header">
       <p class="section-header__eyebrow">{t.setup.eyebrow}</p>
-      <h1 id="setup-title" class="section-header__title">
+      <h2 id="setup-title" class="section-header__title">
         {t.setup.titleLead}{" "}
         <span
           class="deployment-title-highlight relative inline-block whitespace-nowrap"
@@ -197,7 +159,7 @@ const lastRowIndex = why.rows.length - 1;
           {t.setup.titleHighlight}
           <span class="deployment-title-underline" aria-hidden="true"></span>
         </span>
-      </h1>
+      </h2>
       <p class="section-header__subtitle">{t.setup.intro}</p>
     </header>
 
