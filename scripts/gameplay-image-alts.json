@@ -1,0 +1,226 @@
+{
+  "gameplay": [
+    {
+      "file": "tarkov-esp-wallhack.png",
+      "alt": "Escape from Tarkov ESP wallhack showing PMC boxes distance and health through walls in a live raid",
+      "caption": "ESP wallhack",
+      "captionDesc": "Player ESP with boxes, distance and health through cover.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-aimbot-combat.png",
+      "alt": "Escape from Tarkov aimbot combat overlay with FOV circle bone priority and sticky aim during a firefight",
+      "caption": "Aimbot combat",
+      "captionDesc": "Humanized aimbot with FOV and bone priority for AR fights.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-aimbot-lock.png",
+      "alt": "Escape from Tarkov aimbot lock targeting a PMC thorax with silent aim and prediction enabled",
+      "caption": "Aimbot lock",
+      "captionDesc": "Aim lock engaged on a peeking PMC in CQB.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-auto-aim.png",
+      "alt": "Escape from Tarkov auto aim assist tracking a moving Scav while loot ESP markers stay visible",
+      "caption": "Auto aim",
+      "captionDesc": "Sticky auto aim through mid-range sprays.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-player-esp.png",
+      "alt": "Escape from Tarkov player ESP highlighting PMC and Scav skeletons with HP bars across Customs",
+      "caption": "Player ESP",
+      "captionDesc": "PMC / Scav ESP with skeletons and health bars.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-chams-esp.png",
+      "alt": "Escape from Tarkov chams ESP with colored player models visible through walls and floors",
+      "caption": "Chams ESP",
+      "captionDesc": "Colored chams for fast target reads through terrain.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-combat-esp.png",
+      "alt": "Escape from Tarkov combat ESP during a close-quarters Factory fight with enemy distance readouts",
+      "caption": "Combat ESP",
+      "captionDesc": "Combat-ready ESP layout for Factory CQB.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-radar-hack.png",
+      "alt": "Escape from Tarkov radar hack mini-map with enemy dots extract markers and hotspot awareness",
+      "caption": "Radar hack",
+      "captionDesc": "2D mini-radar for nearby PMCs, Scavs and extracts.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-loot-radar.png",
+      "alt": "Escape from Tarkov loot ESP and loot radar highlighting high-value items containers and corpses",
+      "caption": "Loot radar",
+      "captionDesc": "Item and container ESP with high-value loot filters.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-skin-changer.png",
+      "alt": "Escape from Tarkov skin changer preview for weapons and armor skins on the local client only",
+      "caption": "Skin changer",
+      "captionDesc": "Local weapon and armor skin preview.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-thermal-esp.png",
+      "alt": "Escape from Tarkov thermal ESP highlighting players in low-light Labs corridors",
+      "caption": "Thermal ESP",
+      "captionDesc": "Thermal-style player highlights for night and dark maps.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-factory-esp.png",
+      "alt": "Escape from Tarkov Factory ESP wallhack showing stacked PMCs through walls in close-quarters",
+      "caption": "Factory ESP",
+      "captionDesc": "CQB ESP layout tuned for Factory raids.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-labs-wallhack.png",
+      "alt": "Escape from Tarkov Labs wallhack revealing players key rooms and loot through The Lab walls",
+      "caption": "Labs wallhack",
+      "captionDesc": "Labs-ready ESP for key rooms and stacked teams.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-extract-esp.png",
+      "alt": "Escape from Tarkov extract ESP marking exits spawn pressure and nearby players before extract",
+      "caption": "Extract ESP",
+      "captionDesc": "Extract markers and spawn-side awareness before you commit.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-long-range-esp.png",
+      "alt": "Escape from Tarkov long-range ESP tracking distant PMCs across Woods and open fields",
+      "caption": "Long-range ESP",
+      "captionDesc": "Extended distance ESP for Woods and open maps.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    },
+    {
+      "file": "tarkov-squad-esp.png",
+      "alt": "Escape from Tarkov squad ESP showing multiple PMC teammates and enemy groups with distance labels",
+      "caption": "Squad ESP",
+      "captionDesc": "Multi-player ESP for squad fights and third parties.",
+      "source": "wh-satano.ru Escape from Tarkov gallery"
+    }
+  ],
+  "blog": [
+    {
+      "file": "tarkov-esp-wallhack-setup.png",
+      "sourceKey": "covcheg3",
+      "sourceUrl": "https://cdn.wh-satano.ru/covcheg-eft-s3.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-aimbot-raid-guide.png",
+      "sourceKey": "mason5",
+      "sourceUrl": "https://cdn.wh-satano.ru/mason-eft-s5.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-aimbot-combat-guide.png",
+      "sourceKey": "mason6",
+      "sourceUrl": "https://cdn.wh-satano.ru/mason-eft-s6.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-radar-hack-guide.png",
+      "sourceKey": "radar2",
+      "sourceUrl": "https://cdn.wh-satano.ru/eft_radar_s2.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-cheats-features-guide.png",
+      "sourceKey": "authorityMenu",
+      "sourceUrl": "https://cdn.wh-satano.ru/authority-eft-arena-menu.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-lite-vs-pro.png",
+      "sourceKey": "fecurity3",
+      "sourceUrl": "https://cdn.wh-satano.ru/fecefts3.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-elite-tier-guide.png",
+      "sourceKey": "covcheg5",
+      "sourceUrl": "https://cdn.wh-satano.ru/covcheg-eft-s5.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-hwid-spoofer-after-ban.png",
+      "sourceKey": "ancient3",
+      "sourceUrl": "https://cdn.wh-satano.ru/ancient_eft_s3.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "how-to-buy-tarkov-cheats-2026.png",
+      "sourceKey": "hero",
+      "sourceUrl": "https://cdn.wh-satano.ru/eftauths7.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "battleye-patch-day-checklist.png",
+      "sourceKey": "radar4",
+      "sourceUrl": "https://cdn.wh-satano.ru/eft_radar_s4.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "battleye-bypass-tarkov-guide.png",
+      "sourceKey": "fecurity4",
+      "sourceUrl": "https://cdn.wh-satano.ru/fecefts4.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-external-cheat-guide.png",
+      "sourceKey": "chams2",
+      "sourceUrl": "https://cdn.wh-satano.ru/eft_chams2.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-stream-proof-setup.png",
+      "sourceKey": "chams4",
+      "sourceUrl": "https://cdn.wh-satano.ru/eft_chams4.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-skin-changer-guide.png",
+      "sourceKey": "ancient4",
+      "sourceUrl": "https://cdn.wh-satano.ru/ancient_eft_s4.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-offline-raid-guide.png",
+      "sourceKey": "radar5",
+      "sourceUrl": "https://cdn.wh-satano.ru/eft_radar_s5.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-offline-practice-tips.png",
+      "sourceKey": "radar6",
+      "sourceUrl": "https://cdn.wh-satano.ru/eft_radar_s6.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "tarkov-offline-vs-online.png",
+      "sourceKey": "fecurity5",
+      "sourceUrl": "https://cdn.wh-satano.ru/fecefts5.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    },
+    {
+      "file": "how-to-use-tarkov-cheats-safely.png",
+      "sourceKey": "covcheg6",
+      "sourceUrl": "https://cdn.wh-satano.ru/covcheg-eft-s6.webp",
+      "note": "Escape from Tarkov cheat screenshot from Wh-Satano"
+    }
+  ]
+}

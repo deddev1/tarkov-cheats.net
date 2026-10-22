@@ -1,0 +1,733 @@
+import type { Translations } from './types';
+import { PRIMARY_CHECKOUT_PATH } from '../config/checkout';
+import { DISCORD_URL, PRODUCT_BASE } from '../config/site';
+
+const productBase = PRODUCT_BASE;
+
+export const en: Translations = {
+  site: {
+    name: 'Tarkov Cheats',
+    domain: 'tarkov-cheats.net',
+    title: 'Tarkov Cheats | ESP, Aimbot & HWID for EFT',
+    description:
+      'Buy Escape from Tarkov cheats for PC. Player ESP, wallhack, loot ESP, radar, aimbot and HWID spoofer for PMC raids, Labs and Factory. BattlEye status-checked.',
+    discord: DISCORD_URL,
+  },
+  nav: [
+    { href: `${productBase}`, label: 'Products' },
+    { href: '/blog/', label: 'Blog' },
+    { href: '/forum/', label: 'Forum' },
+    { href: '/faq/', label: 'FAQ' },
+    { href: '/support/', label: 'Support' },
+  ],
+  hero: {
+    status: 'Tarkov online',
+    eyebrow: 'Patch-aware Tarkov cheats',
+    titleLine1: 'Tarkov Cheats —',
+    titleLine2: 'ESP, Aimbot & Loot ESP for PC',
+    subtitle:
+      'Player ESP, wallhack, loot ESP, radar and aimbot for Escape from Tarkov on Windows PC. Tuned for PMC raids, Scav runs, Labs, Factory, Customs and Arena. Updated after BattlEye patches.',
+    ctaPrimary: 'View products',
+    ctaDiscord: 'Join Discord',
+    modesLabel: 'Maps',
+    modes: ['Customs', 'Labs', 'Factory', 'Woods'],
+    metrics: [
+      { label: 'Stream-proof', strong: 'Yes' },
+      { label: 'Patch speed', strong: '<24h' },
+      { label: 'Users', strong: '300+' },
+      { label: 'Support', strong: '24/7' },
+    ],
+  },
+  features: {
+    eyebrow: 'Features',
+    title: 'What you get',
+    subtitle:
+      'Escape from Tarkov ESP, wallhack, loot ESP, radar and aimbot for PC. Updated every BattlEye patch.',
+    items: [
+      {
+        title: 'Aimbot',
+        subtitle: 'Smooth targeting, per weapon',
+        desc: 'Humanized Tarkov aimbot for PMC raids, Labs and Factory. Set smoothness, FOV, bone priority and separate profiles for AR, SMG, shotgun and sniper.',
+        bullets: [
+          'Smoothness and FOV sliders',
+          'Bone priority: head, thorax or closest',
+          'Per-weapon AR, SMG, DMR and sniper profiles',
+          'Prediction on peeking and moving targets',
+          'Presets for Labs, Factory, Customs and Arena',
+        ],
+        tags: ['tarkov aimbot', 'weapon presets', 'bone priority'],
+        bento: 'sm:col-span-2 lg:col-span-12 lg:col-start-1 lg:row-start-1',
+      },
+      {
+        title: 'ESP / Wallhack',
+        subtitle: 'See PMCs through walls',
+        desc: 'Boxes, skeletons, distance and health on PMC and Scav players through walls, floors and cover on every map.',
+        bullets: [
+          'Player boxes, skeletons, HP and distance',
+          'PMC / Scav color filters',
+          'Alarms when enemies approach or go silent',
+        ],
+        tags: ['tarkov ESP', 'wallhack', 'PMC ESP'],
+        bento: 'sm:col-span-2 lg:col-span-8 lg:col-start-1 lg:row-start-2',
+      },
+      {
+        title: 'Radar',
+        subtitle: 'Know where fights are',
+        desc: '2D Tarkov radar for nearby PMCs, Scavs and fights around you—including extract-side pressure cues.',
+        bullets: ['Enemy dots on mini-radar', 'Landmark and hotspot markers', 'Works with ESP wallhack'],
+        tags: ['tarkov radar', 'map awareness', 'extract awareness'],
+        bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-3',
+      },
+      {
+        title: 'Loot / Item ESP',
+        subtitle: 'Find high-value loot fast',
+        desc: 'Shows loose loot, containers, keyed rooms and rare items with distance so you hit value and extract sooner.',
+        bullets: ['Item and container ESP', 'High-value loot filters', 'Stash and corpse markers'],
+        tags: ['loot ESP', 'item ESP', 'container ESP'],
+        bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-3',
+      },
+      {
+        title: 'Skin Changer',
+        subtitle: 'Local weapon & gear preview',
+        desc: 'Preview weapons, armor and gear skins on your client only. Does not change Battlestate store purchases.',
+        bullets: [
+          'Weapon and armor skin preview',
+          'Favorites and config export',
+          'Included with Elite or sold as Unlock All',
+        ],
+        tags: ['tarkov skin changer', 'gear preview', 'cosmetics'],
+        bento:
+          'sm:col-span-2 lg:col-span-8 lg:row-span-2 lg:col-start-1 lg:row-start-4',
+      },
+      {
+        title: 'Stream Proof',
+        subtitle: 'Hide overlays on stream',
+        desc: 'You see ESP and aimbot on your screen. OBS and Game Bar get a clean Escape from Tarkov feed.',
+        bullets: [
+          'OBS and Game Bar safe modes',
+          'Toggle per module',
+          'Setup notes in the portal',
+        ],
+        tags: ['stream proof', 'stream-proof', 'OBS safe'],
+        bento:
+          'sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:col-start-9 lg:row-start-4',
+      },
+      {
+        title: 'Cloud Config & BattlEye Updates',
+        subtitle: 'After every patch',
+        desc: 'Save configs to the cloud. Loader updates go out after Escape from Tarkov and BattlEye patches.',
+        bullets: ['Cloud backup for ESP and weapon presets', 'Loader updates after BattlEye patches', 'Status notes in Discord #status'],
+        tags: ['cloud sync', 'BattlEye updates', 'presets'],
+        bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-1 lg:row-start-6',
+      },
+      {
+        title: 'Maps & modes',
+        subtitle: 'Customs, Labs, Factory, Woods',
+        desc: 'Raid presets for Customs, Woods, Shoreline, Interchange, Reserve, Lighthouse, Streets, Ground Zero, Labs, Factory and Arena.',
+        bullets: ['Labs and Factory CQB presets', 'Safer defaults for hotspots', 'Raid-ready ESP layouts'],
+        tags: ['Customs', 'Labs', 'Factory'],
+        bento: 'sm:col-span-2 lg:col-span-6 lg:col-start-7 lg:row-start-6',
+      },
+      {
+        title: 'Extra tools',
+        subtitle: 'Elite options',
+        desc: 'No recoil, recoil control and loot assist on Elite, on top of ESP wallhack and aimbot.',
+        bullets: [
+          'No recoil for sustained sprays',
+          'Recoil control for DMRs and ARs',
+          'Loot assist on Elite',
+        ],
+        tags: ['no recoil', 'loot assist', 'utilities'],
+        bento: 'sm:col-span-2 lg:col-span-4 lg:col-start-9 lg:row-start-2',
+      },
+    ],
+  },
+  whyUs: {
+    eyebrow: 'Why us',
+    title: 'Updated after BattlEye patches',
+    subtitle:
+      'A lot of Tarkov cheat sites go down after patches and leave you with bots in chat. We push loader updates, keep raid-safe defaults, and answer on Discord.',
+    usLabel: 'Tarkov Cheats',
+    otherLabel: 'Typical shop',
+    rows: [
+      {
+        title: 'Loader updates after patches',
+        desc: 'New builds usually go out within hours of an Escape from Tarkov or BattlEye update. Check Discord #status before you queue a raid.',
+      },
+      {
+        title: 'Raid-safe defaults',
+        desc: 'Default ESP range, aimbot smoothness and bone priority are tuned for live raids. You can tighten them later if you want.',
+      },
+      {
+        title: 'Discord support',
+        desc: 'People on Discord help with loader setup, weapon presets and HWID resets. Coverage is 24/7.',
+      },
+      {
+        title: 'External loader + stream proof',
+        desc: 'External loader with OBS-safe mode so overlays stay off your stream.',
+      },
+      {
+        title: 'Cloud configs',
+        desc: 'Save Labs, Factory, Customs and per-weapon settings and load them on another PC.',
+      },
+      {
+        title: 'HWID resets',
+        desc: 'Hardware resets and license moves go through Discord. Most shops lock you to one PC.',
+      },
+    ],
+    metrics: [
+      {
+        value: '<24h',
+        title: 'Patch turnaround',
+        desc: 'Usual time to ship a loader after a big Escape from Tarkov or BattlEye update.',
+      },
+      {
+        value: '24/7',
+        title: 'Support',
+        desc: 'Discord help for setup, configs and account issues.',
+      },
+      {
+        value: '300+',
+        title: 'Users',
+        desc: 'PC players using Tarkov ESP, radar and aimbot on tarkov-cheats.net.',
+      },
+    ],
+  },
+  setup: {
+    eyebrow: 'Setup',
+    titleLead: 'Checkout to in-raid in',
+    titleHighlight: 'three steps',
+    intro:
+      'Buy access, download the loader from the portal, load a preset, then open Escape from Tarkov. Discord help is there if you get stuck.',
+    ctaPrimary: 'View products',
+    ctaSecondary: 'Setup FAQ',
+    ctaPrimaryHref: productBase,
+    ctaSecondaryHref: '/faq/',
+    steps: [
+      {
+        step: 'Step 1',
+        title: 'Buy and download the loader',
+        desc: 'Finish checkout, open the portal, and download the latest Windows loader.',
+      },
+      {
+        step: 'Step 2',
+        title: 'Load presets',
+        desc: 'Run the loader, pick a Labs, Factory or Customs preset, and set ESP and aimbot.',
+      },
+      {
+        step: 'Step 3',
+        title: 'Check status and raid',
+        desc: 'Confirm the status banner is online, launch Escape from Tarkov, and use your saved config.',
+      },
+    ],
+  },
+  compatibility: {
+    eyebrow: 'Platform',
+    title: 'Windows PC',
+    subtitle: 'Check the status banner after Escape from Tarkov updates before you launch.',
+    items: ['Windows 10 & 11', 'BSG / EFT launcher', 'Escape from Tarkov client', 'Auto updater', 'Config cloud sync', 'Discord support', 'HWID reset', 'External loader'],
+  },
+  cheats: {
+    eyebrow: 'Elite',
+    title: 'Tarkov Elite',
+    subtitle: 'ESP wallhack, aimbot, loot assist, skin changer, and faster BattlEye patch priority.',
+    viewAll: 'View Elite details',
+    explore: 'Explore',
+    items: [
+      {
+        badge: 'Limited slots',
+        tier: 'Private',
+        name: 'Elite',
+        title: 'Tarkov Elite',
+        desc: 'Elite Escape from Tarkov cheat with loot assist, no recoil, recoil control, full ESP wallhack, skin changer and direct Discord support.',
+        features: ['Loot Assist', 'No Recoil', 'Recoil Control', 'Full ESP wallhack', 'Skin Changer', 'Priority patch queue'],
+        more: 42,
+        href: `${productBase}elite/`,
+        variant: 'limited',
+      },
+    ],
+  },
+  products: {
+    eyebrow: 'Products',
+    title: 'Tarkov cheat products',
+    subtitle: 'Elite Tarkov cheats, HWID spoofer, UGC recovery and skin changer for Escape from Tarkov.',
+    viewAll: 'View all products',
+    get: 'Get',
+    explore: 'Explore',
+    items: [
+      {
+        badge: 'Available',
+        category: 'System utility',
+        title: 'HWID Spoofer',
+        subtitle: 'Clean slate for your PC',
+        desc: 'Hardware ID spoofing for disk serials, MAC addresses and GPU IDs—follow the portal setup guide before launching Escape from Tarkov.',
+        features: ['Spoofer & cleanup tools', 'Serial profile rotation', 'Compatibility scan', 'Post-spoof verification'],
+        more: 9,
+        href: `${productBase}hwid-spoofer/`,
+      },
+      {
+        badge: 'Available',
+        category: 'Account recovery',
+        title: 'UGC',
+        subtitle: 'Unban & governance control',
+        desc: 'All-in-one appeal workspace for Battlestate account restrictions, BattlEye bans and security holds—custom workflows and dispute automation.',
+        features: ['Custom appeal workflows', 'Dispute automation', 'Case documentation', 'Status tracking dashboard'],
+        more: 6,
+        href: `${productBase}ugc/`,
+      },
+      {
+        badge: 'Available',
+        category: 'Cosmetic',
+        title: 'Skin Changer',
+        subtitle: 'Unlock every cosmetic locally',
+        desc: 'Lightweight Tarkov skin changer for weapons, armor and rare skins—local preview without Battlestate store purchases.',
+        features: ['Weapon skin swap', 'Armor & gear customizer', 'Exclusive set preview', 'Config favorites export'],
+        more: 7,
+        href: `${productBase}unlock-all/`,
+      },
+    ],
+  },
+  blog: {
+    eyebrow: 'Blog',
+    title: 'Guides and updates',
+    subtitle: 'ESP wallhack setup, loot ESP, aimbot raid tips and BattlEye patch-day checks for Escape from Tarkov.',
+    latestTitle: 'Latest articles',
+    latestSubtitle: 'Filter by topic or sort to find setup guides, feature deep-dives, and patch-day notes.',
+    filterAll: 'All articles',
+    sortLabel: 'Sort by',
+    sortNewest: 'Newest first',
+    sortOldest: 'Oldest first',
+    sortShortRead: 'Shortest read',
+    sortLongRead: 'Longest read',
+    emptyFilter: 'No articles match this filter.',
+    viewAll: 'View all articles',
+    read: 'Read',
+    items: [
+      {
+        tag: 'Guides',
+        title: 'Escape from Tarkov offline guide: aim drills before Labs',
+        slug: 'tarkov-offline-raid-guide',
+        image: '/images/blog/tarkov-offline-raid-guide.png',
+        desc: 'Use offline raids to practice aimbot smoothness, ESP ranges and weapon presets before Labs.',
+        date: 'Aug 20, 2026',
+        readTime: '18 min read',
+      },
+      {
+        tag: 'Features',
+        title: 'Tarkov cheats features: ESP, radar, loot assist and more',
+        slug: 'tarkov-cheats-features-guide',
+        image: '/images/blog/tarkov-cheats-features-guide.png',
+        desc: 'Complete guide to our Tarkov cheats—Aimbot, Loot Assist, Skin Changer, Radar Hack, ESP Wallhack and Recoil Control.',
+        date: 'Aug 18, 2026',
+        readTime: '12 min read',
+      },
+      {
+        tag: 'Guides',
+        title: 'ESP vs aimbot modules: which Tarkov features you need',
+        slug: 'tarkov-lite-vs-pro',
+        image: '/images/blog/tarkov-lite-vs-pro.png',
+        desc: 'Map awareness vs aimbot automation—compare modules inside Tarkov Elite for Labs, Arena and raids.',
+        date: 'Aug 16, 2026',
+        readTime: '14 min read',
+      },
+      {
+        tag: 'Guides',
+        title: 'Elite tier guide: when to upgrade your Tarkov cheats',
+        slug: 'tarkov-elite-tier-guide',
+        image: '/images/blog/tarkov-elite-tier-guide.png',
+        desc: 'Loot Assist, No Recoil, Skin Changer and full ESP wallhack—who Elite is for and how to tune safely.',
+        date: 'Aug 16, 2026',
+        readTime: '7 min read',
+      },
+      {
+        tag: 'Setup',
+        title: 'Escape from Tarkov aimbot for live raids',
+        slug: 'tarkov-aimbot-raid-guide',
+        image: '/images/blog/tarkov-aimbot-raid-guide.png',
+        desc: 'Skill assist, prediction and hotkey macros for surviving high-tier loot runs with Pro tier Tarkov cheats.',
+        date: 'Aug 15, 2026',
+        readTime: '6 min read',
+      },
+      {
+        tag: 'Setup',
+        title: 'ESP wallhack setup for Escape from Tarkov Labs',
+        slug: 'tarkov-esp-wallhack-setup',
+        image: '/images/blog/tarkov-esp-wallhack-setup.png',
+        desc: 'Enemy position tracking, PMC/Scav colors, loot ESP and range caps for Lite and Elite tiers.',
+        date: 'Aug 15, 2026',
+        readTime: '5 min read',
+      },
+      {
+        tag: 'Setup',
+        title: 'Radar hack guide for Escape from Tarkov',
+        slug: 'tarkov-radar-hack-guide',
+        image: '/images/blog/tarkov-radar-hack-guide.png',
+        desc: 'Mini-radar, extract awareness and safe distance caps for Labs, Arena and PMC raids.',
+        date: 'Aug 14, 2026',
+        readTime: '5 min read',
+      },
+      {
+        tag: 'Guides',
+        title: 'Skin changer and Unlock All for Escape from Tarkov',
+        slug: 'tarkov-skin-changer-guide',
+        image: '/images/blog/tarkov-skin-changer-guide.png',
+        desc: 'Preview outfits, armor and exclusive sets locally with our Unlock All Skin Changer module.',
+        date: 'Aug 14, 2026',
+        readTime: '6 min read',
+      },
+      {
+        tag: 'Updates',
+        title: 'BattlEye patch day checklist for Tarkov cheats',
+        slug: 'battleye-patch-day-checklist',
+        image: '/images/blog/battleye-patch-day-checklist.png',
+        desc: 'Status banner, loader reload and conservative profiles after every Escape from Tarkov or BattlEye update.',
+        date: 'Aug 13, 2026',
+        readTime: '5 min read',
+      },
+      {
+        tag: 'Guides',
+        title: 'HWID spoofer vs new account after a BattlEye ban',
+        slug: 'tarkov-hwid-spoofer-after-ban',
+        image: '/images/blog/tarkov-hwid-spoofer-after-ban.png',
+        desc: 'When to spoof hardware, when to start fresh, and how tarkov-cheats.net/products/tarkov-cheats fits each path.',
+        date: 'Aug 13, 2026',
+        readTime: '7 min read',
+      },
+      {
+        tag: 'Guides',
+        title: 'How to buy Tarkov cheats in 2026',
+        slug: 'how-to-buy-tarkov-cheats-2026',
+        image: '/images/blog/how-to-buy-tarkov-cheats-2026.png',
+        desc: 'Step-by-step purchase walkthrough for Tarkov Elite and utilities via our secure checkout.',
+        date: 'Aug 12, 2026',
+        readTime: '5 min read',
+      },
+      {
+        tag: 'Setup',
+        title: 'Tarkov aimbot guide: AR, SMG and sniper profiles',
+        slug: 'tarkov-aimbot-combat-guide',
+        image: '/images/blog/tarkov-aimbot-combat-guide.png',
+        desc: 'Per-weapon aimbot profiles for Elite—AR, SMG and sniper setups for live raids.',
+        date: 'Aug 12, 2026',
+        readTime: '6 min read',
+      },
+      {
+        tag: 'Troubleshooting',
+        title: 'BattlEye was unable to verify Escape from Tarkov',
+        slug: 'battleye-bypass-tarkov-guide',
+        image: '/images/blog/battleye-bypass-tarkov-guide.png',
+        desc: 'Fix verification errors, file integrity checks and when to use UGC appeal workflows after BattlEye issues.',
+        date: 'Aug 11, 2026',
+        readTime: '6 min read',
+      },
+      {
+        tag: 'Guides',
+        title: 'Escape from Tarkov external cheat guide',
+        slug: 'tarkov-external-cheat-guide',
+        image: '/images/blog/tarkov-external-cheat-guide.png',
+        desc: 'Why external Tarkov cheats matter, how the external loader works on PC and what makes private software safer than free tools.',
+        date: 'Aug 11, 2026',
+        readTime: '7 min read',
+      },
+      {
+        tag: 'Setup',
+        title: 'Stream-proof overlay setup for Escape from Tarkov',
+        slug: 'tarkov-stream-proof-setup',
+        image: '/images/blog/tarkov-stream-proof-setup.png',
+        desc: 'Hide ESP wallhack and aimbot overlays from OBS and Game Bar—test workflow for content creators.',
+        date: 'Aug 10, 2026',
+        readTime: '5 min read',
+      },
+    ],
+  },
+  toolkit: {
+    eyebrow: 'Software',
+    title: 'Organized, easy to configure',
+    subtitle: 'Every module is grouped for quick tuning mid-fight without tabbing through chaos.',
+    items: [
+      { num: '01', label: 'Aimbot', title: 'Tracking that adapts per weapon', desc: 'Smoothness, range, sticky targeting and bone priority in one aimbot tab.' },
+      { num: '02', label: 'ESP', title: 'Wallhack that stays readable', desc: 'Boxes, skeletons, distance, health and PMC / Scav faction filters.' },
+      { num: '03', label: 'Radar', title: 'Labs fights on lock', desc: 'Enemy dots, extract markers and mini-radar with elevation cues.' },
+      { num: '04', label: 'Weapons', title: 'Per-weapon aim profiles', desc: 'Save AR, SMG, shotgun, sniper and more—swap with hotkeys.' },
+      { num: '05', label: 'Loot', title: 'Loot ESP & loot assist', desc: 'Item highlights, containers and Elite Loot Assist pathing.' },
+      { num: '06', label: 'Profiles', title: 'Configs for every map', desc: 'Labs, Factory, Customs and Arena presets with cloud backup.' },
+    ],
+  },
+  workflow: {
+    eyebrow: 'How it works',
+    badge: '4 steps',
+    titleBefore: 'From buy to',
+    titleHighlight: 'saved config.',
+    subtitle: 'Buy, download the loader, set modules, save your Escape from Tarkov config for next time.',
+    ctaLabel: 'View products',
+    ctaHref: productBase,
+    ctaSecondary: 'Setup FAQ',
+    ctaSecondaryHref: '/faq/',
+    items: [
+      {
+        num: '01',
+        phase: 'Before purchase',
+        title: 'Check status',
+        desc: 'Read the live banner on tarkov-cheats.net before you buy or launch.',
+      },
+      {
+        num: '02',
+        phase: 'Checkout',
+        title: 'Pick a product',
+        desc: 'Choose Tarkov Elite or a utility (HWID, UGC, Skin Changer) based on what you need.',
+      },
+      {
+        num: '03',
+        phase: 'Loader',
+        title: 'Launch and set up',
+        desc: 'Download from the portal, turn on modules, and test in an offline raid.',
+      },
+      {
+        num: '04',
+        phase: 'In-game',
+        title: 'Save your config',
+        desc: 'When the settings feel right, save Labs, Arena and raid presets to the cloud.',
+      },
+    ],
+  },
+  fieldNotes: {
+    eyebrow: 'Notes',
+    title: 'Quick tips',
+    items: [
+      { num: '01', title: 'After patches', desc: 'Check Discord and the portal status before you queue Labs after an Escape from Tarkov update.' },
+      { num: '02', title: 'Start slow', desc: 'Use the default aimbot smoothness and ESP range first, then raise them if you need to.' },
+      { num: '03', title: 'Discord help', desc: 'Stuck on the loader or configs? Ask in Discord and someone will walk you through it.' },
+    ],
+  },
+  support: {
+    eyebrow: 'Support',
+    title: 'Tarkov Cheats support',
+    subtitle: 'Loader, HWID, checkout and account help.',
+    channels: [
+      {
+        icon: 'users',
+        title: 'Before you buy',
+        desc: 'Ask about tiers and what each product includes.',
+        linkLabel: 'Start checkout',
+        href: PRIMARY_CHECKOUT_PATH,
+      },
+      {
+        icon: 'headphones',
+        title: 'Email support',
+        desc: 'Loader errors, HWID and account issues.',
+        linkLabel: 'support@tarkov-cheats.net',
+        href: 'mailto:support@tarkov-cheats.net',
+      },
+      {
+        icon: 'navFaq',
+        title: 'FAQ',
+        desc: 'Compatibility, bans and setup answers.',
+        linkLabel: 'View FAQ',
+        href: '/faq/',
+      },
+      {
+        icon: 'clock',
+        title: 'Discord',
+        desc: 'Support online 24/7.',
+        linkLabel: 'Contact page',
+        href: '/support/',
+      },
+    ],
+    ticketTitle: 'Include in your ticket',
+    ticketItems: [
+      { title: 'Order email', desc: 'The email you used at checkout on tarkov-cheats.net.' },
+      { title: 'Platform', desc: 'Windows 10 or 11, Escape from Tarkov launcher, and your Escape from Tarkov version.' },
+      { title: 'Error detail', desc: 'Screenshot or exact text from the loader or Battlestate.' },
+    ],
+  },
+  faq: {
+    eyebrow: 'FAQ',
+    title: 'Common questions',
+    subtitle: 'Compatibility, bans, tiers and setup.',
+    items: [
+      {
+        num: '01',
+        q: 'Where do I check if Tarkov cheats are online?',
+        a: 'The live status banner is on tarkov-cheats.net and in the Discord #status channel. Always check after an Escape from Tarkov or BattlEye update.',
+      },
+      {
+        num: '02',
+        q: 'What happens after I buy?',
+        a: 'Your portal unlocks the loader, setup guide and config library via our secure checkout. Follow the guide before launching Escape from Tarkov.',
+      },
+      {
+        num: '03',
+        q: 'Can I get banned using private tarkov cheats?',
+        a: 'Yes—any modification carries risk. BattlEye and report systems evolve. Read current status and accept the risk before use.',
+      },
+      {
+        num: '04',
+        q: 'Which platforms are supported?',
+        a: 'Escape from Tarkov via the official launcher on Windows 10/11 64-bit only. macOS and Linux are not supported.',
+      },
+      {
+        num: '05',
+        q: 'Can I move my license to a new PC?',
+        a: 'Yes—use the HWID reset in your portal or open a Discord ticket. Limits depend on your tier.',
+      },
+      {
+        num: '06',
+        q: 'Where are products and utilities listed?',
+        a: 'Cheat tiers, HWID Spoofer, UGC and Skin Changer live at tarkov-cheats.net/products/tarkov-cheats with feature lists and checkout via our partner.',
+      },
+    ],
+  },
+  footer: {
+    tagline: 'Tarkov cheats for PC: ESP, Labs radar, aimbot and tools.',
+    explore: 'Explore',
+    exploreLinks: [
+      { href: '/', label: 'Feature overview', ariaLabel: 'Features', scrollTarget: 'features' },
+      { href: '/products/tarkov-cheats/elite/', label: 'Elite tarkov cheats', ariaLabel: 'Elite cheats' },
+      { href: '/products/tarkov-cheats/', label: 'All products & utilities', ariaLabel: 'Products' },
+      { href: '/blog/', label: 'Read patch guides', ariaLabel: 'Blog' },
+      { href: '/faq/', label: 'Pre-purchase FAQ', ariaLabel: 'FAQ' },
+    ],
+    support: 'Support',
+    legal: 'Legal',
+    privacy: 'Privacy Policy',
+    terms: 'Terms & Conditions',
+    about: 'About',
+  },
+  legalPages: {
+    about: {
+      title: 'About Tarkov Cheats',
+      description:
+        'Tarkov Cheats sells Escape from Tarkov cheat tiers, utilities and guides at tarkov-cheats.net.',
+      sections: [
+        {
+          heading: 'Who we are',
+          paragraphs: [
+            'Tarkov Cheats is a PC site for Escape from Tarkov ESP, wallhack, Labs radar, aimbot and Skin Changer products. We post tier comparisons, setup guides and live status notes.',
+            'Game and product names are for identification only.',
+          ],
+        },
+        {
+          heading: 'What we sell',
+          paragraphs: [
+            'Tarkov Elite cheats, plus HWID Spoofer, Skin Changer and UGC recovery. The blog covers configs, patch checks and BattlEye updates.',
+            'Pages are updated when Escape from Tarkov or the loader changes. Check the homepage status banner and Discord #status before you play.',
+          ],
+        },
+        {
+          heading: 'Support',
+          paragraphs: [
+            'Use Discord or email for loader errors, compatibility and checkout questions. Include your order email, Battlestate account and Windows version.',
+          ],
+        },
+      ],
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      description:
+        'How Tarkov Cheats handles analytics, cookies and contact data on tarkov-cheats.net.',
+      sections: [
+        {
+          heading: 'Information we collect',
+          paragraphs: [
+            'We may collect basic analytics such as page views, device type, browser and approximate region through Google Analytics when it is enabled. Checkout runs on external pages. We do not store payment card data on tarkov-cheats.net.',
+          ],
+        },
+        {
+          heading: 'How we use data',
+          paragraphs: [
+            'Analytics show which guides and product pages people use so we can fix broken links and improve pages. Support tickets keep the email and message you send until the issue is closed.',
+          ],
+        },
+        {
+          heading: 'Cookies',
+          paragraphs: [
+            'We use basic analytics cookies. You can block cookies in your browser. The site still works without them.',
+          ],
+        },
+        {
+          heading: 'Support',
+          paragraphs: [
+            'For privacy questions, use the Support page. Purchase and refund rules are in Terms & Conditions.',
+          ],
+        },
+      ],
+    },
+    terms: {
+      title: 'Terms & Conditions',
+      description:
+        'Purchase, license, refund and use terms for Tarkov Cheats products on tarkov-cheats.net.',
+      sections: [
+        {
+          heading: 'Agreement',
+          paragraphs: [
+            'Last updated: September 2026. By using tarkov-cheats.net or buying a product listed here, you agree to these Terms & Conditions and our Privacy Policy.',
+          ],
+        },
+        {
+          heading: 'What you purchase',
+          paragraphs: [
+            'We sell Escape from Tarkov Elite cheats and tools (HWID Spoofer, UGC, Skin Changer / Unlock All) through a portal and Windows loader for Battlestate.',
+            'Product pages list what is included when you buy. Features can change when Escape from Tarkov or BattlEye updates.',
+          ],
+        },
+        {
+          heading: 'Checkout and delivery',
+          paragraphs: [
+            'Payment and license delivery run on external checkout pages. tarkov-cheats.net does not process or store payment card numbers.',
+            'After purchase, use the operator portal linked from your order flow to download the current loader and setup guide before launching Escape from Tarkov.',
+          ],
+        },
+        {
+          heading: 'License use',
+          paragraphs: [
+            'Licenses are for your personal use only. Do not share loader files, portal logins, or license keys. HWID and device limits depend on your tier and are enforced in the portal.',
+          ],
+        },
+        {
+          heading: 'Refunds and purchases',
+          paragraphs: [
+            'All sales are final once checkout completes. We do not refund change-of-mind purchases, account bans, BattlEye penalties, or issues caused by ignoring setup guides or running modules while the status banner shows offline.',
+            'If the product does not work as described on a supported setup—Escape from Tarkov on Windows 10/11, current loader from the portal, and the live status banner shows online when you started—contact us through the Support page. Include your order email, Windows version, Escape from Tarkov build, and screenshots or exact error text from the loader.',
+            'We may, at our discretion, offer a fix, replacement access, or partial/full refund when we confirm a fault on our side. We are not obligated to approve every request.',
+          ],
+        },
+        {
+          heading: 'Availability and risk',
+          paragraphs: [
+            'Third-party tools for Escape from Tarkov can conflict with game updates and BattlEye systems. You use this software at your own risk, including possible account action.',
+            'Check the homepage status banner before every session. Do not queue Labs while modules are offline or misaligned after a patch.',
+          ],
+        },
+        {
+          heading: 'Changes',
+          paragraphs: [
+            'We may update these terms. The “Last updated” date at the top will change when we do. Continued use of the site after changes means you accept the revised terms.',
+          ],
+        },
+        {
+          heading: 'Support',
+          paragraphs: [
+            'For terms, billing, or loader questions, use the buttons on the Support page. See also our Privacy Policy for how we handle site data.',
+          ],
+        },
+      ],
+    },
+    support: {
+      title: 'Tarkov Cheats Support',
+      description:
+        'Get support for loader, HWID, and checkout questions at tarkov-cheats.net.',
+    },
+  },
+  ui: {
+    skipLink: 'Skip to main content',
+    browseCheats: 'Try Now',
+    browseCheatsMobile: 'Start checkout',
+    homeAria: 'Tarkov Cheats home',
+    checkoutAria: 'Start checkout',
+    discordAria: 'Join Tarkov Cheats on Discord',
+    menuOpen: 'Open menu',
+    menuClose: 'Close menu',
+    themeLight: 'Switch to light mode',
+    themeDark: 'Switch to dark mode',
+  },
+};

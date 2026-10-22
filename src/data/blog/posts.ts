@@ -1,0 +1,641 @@
+import type { BlogPostFull } from './types';
+
+const footerBlocks: BlogPostFull['body'] = [
+  {
+    type: 'p',
+    text: 'BattlEye enforcement is real: read the live status banner, reload the loader after patches, and use conservative presets. Humanized aimbot smoothness and limited ESP range reduce report volume compared to max automation on day one.',
+  },
+  {
+    type: 'p',
+    text: 'Compare [ESP vs aimbot modules](/blog/tarkov-lite-vs-pro/) and the [features guide](/blog/tarkov-cheats-features-guide/) before checkout. [Elite](/products/tarkov-cheats/elite/) includes ESP, aimbot, loot assist and Skin Changer.',
+  },
+];
+
+export const blogPosts: BlogPostFull[] = [
+  {
+    tag: 'Guides',
+    title: 'Escape from Tarkov Offline raids guide: aim drills before live raids',
+    slug: 'tarkov-offline-raid-guide',
+    image: '/images/blog/tarkov-offline-raid-guide.png',
+    desc: 'Use offline raids to practice aimbot smoothness, ESP ranges and loadouts before live PMC raids.',
+    date: 'Aug 20, 2026',
+    readTime: '18 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Offline raids are the safest place to tune Escape from Tarkov aimbot, ESP and wallhack before live PMC raids. Official practice tools never carry into matchmaking—private cheats on tarkov-cheats.net are a separate path for live games under BattlEye.',
+      },
+      { type: 'h2', text: 'Offline vs live tools' },
+      {
+        type: 'p',
+        text: 'Offline raids let you drill AR sprays, SMG CQB and sniper peeks with unlimited resets. Live Labs and PMC raids need external aimbot and ESP modules updated after every BattlEye patch. Explore [Tarkov Elite](/products/tarkov-cheats/elite/) and utilities at [products](/products/tarkov-cheats/) after practice.',
+      },
+      { type: 'h2', text: 'Safe practice workflow' },
+      {
+        type: 'p',
+        text: 'Load an offline raid before enabling any private cheat modules. Bind comfortable hotkeys, then drill with high smoothness and moderate FOV so live presets feel familiar.',
+      },
+      {
+        type: 'p',
+        text: 'Offline never carries into PMC matchmaking. When you are ready for live games, use the external loader from tarkov-cheats.net—not lobby sandbox tools alone.',
+      },
+      { type: 'h2', text: 'Aimbot practice workflow' },
+      {
+        type: 'p',
+        text: 'Load an Elite Labs preset with high smoothness and moderate FOV. Spend ten minutes offline: AR mid-range, SMG close, sniper peeks. Lower smoothness only after tracking looks human—see [Aimbot guide](/blog/tarkov-aimbot-combat-guide/) and [aimbot for live raids](/blog/tarkov-aimbot-raid-guide/).',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Load the Labs preset with high smoothness and moderate FOV.',
+          'Run AR mid-range sprays for five minutes without changing sliders.',
+          'Switch to SMG close-range tracking, then sniper peek timing.',
+          'Only lower smoothness after tracking looks human in replays.',
+          'Save an offline profile separate from your live Labs preset.',
+        ],
+      },
+      { type: 'h2', text: 'ESP, radar and loot drills' },
+      {
+        type: 'p',
+        text: 'In an offline raid, enable player boxes, skeletons, distance and health at 1200 units. Mark loot piles and extracts, then fight without staring at overlays. Pair with [ESP wallhack setup](/blog/tarkov-esp-wallhack-setup/) and [radar hack guide](/blog/tarkov-radar-hack-guide/).',
+      },
+      {
+        type: 'ul',
+        items: [
+          'Start player boxes and skeletons at 1200 units max distance.',
+          'Enable health bars and distance readouts; turn off clutter.',
+          'Add loot ESP only after boxes feel natural.',
+          'Keep mini-radar on for flank calls; practice rotating with radar dots.',
+          'Test stream-proof mode with a 30-second OBS recording.',
+          'Never first-session a new preset in live raids on patch day.',
+        ],
+      },
+      { type: 'h2', text: 'Practice checklist' },
+      {
+        type: 'table',
+        headers: ['Drill', 'Module', 'Goal'],
+        rows: [
+          ['AR mid-range spray', 'Aimbot + smoothness', 'Humanized tracking, not snaps'],
+          ['SMG close fight', 'Sticky Aim + FOV', 'Stay on target while strafing'],
+          ['Sniper peek', 'Bone Priority', 'Torso/chest priority under pressure'],
+          ['Third-party reads', 'ESP boxes + radar', 'Call enemies before they peak'],
+          ['Farm route loot', 'Loot / loot ESP', 'Clear loot containers faster'],
+          ['Stream test', 'Stream proof', 'OBS feed shows clean game'],
+        ],
+      },
+      { type: 'h2', text: 'Offline vs private cheats' },
+      {
+        type: 'table',
+        headers: ['Goal', 'Offline raids', 'Private cheats'],
+        rows: [
+          ['Learn spray patterns', 'Yes—unlimited resets', 'After presets feel natural'],
+          ['See enemies through walls', 'No', 'ESP / wallhack on Elite'],
+          ['Humanized aim assist', 'No', 'Aimbot on Elite'],
+          ['Loot ESP', 'No', 'Elite and utilities'],
+          ['Stream-safe overlays', 'N/A', 'Stream proof on Elite'],
+          ['BattlEye patch updates', 'N/A', 'Loader updates after patches'],
+        ],
+      },
+      { type: 'h2', text: 'When to move to live tools' },
+      {
+        type: 'p',
+        text: 'Offline teaches mechanics; private Tarkov cheats apply them under BattlEye in live raids. Start with Elite for full ESP, aimbot, loot assist and Skin Changer—or add [HWID Spoofer](/products/tarkov-cheats/hwid-spoofer/) / [UGC](/products/tarkov-cheats/ugc/) when needed. Follow the [BattlEye patch day checklist](/blog/battleye-patch-day-checklist/) before every patch-day queue.',
+      },
+      {
+        type: 'cta',
+        title: 'Ready for live raids?',
+        text: 'Offline drills teach mechanics; Elite Tarkov cheats apply them in live raids. Shop products at tarkov-cheats.net.',
+        href: '/go/tarkov/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Features',
+    title: 'Tarkov cheats features: aimbot, ESP wallhack and more',
+    slug: 'tarkov-cheats-features-guide',
+    image: '/images/blog/tarkov-cheats-features-guide.png',
+    desc: 'Complete guide to our tarkov cheats—Aimbot, Loot Assist, Skin Changer, Radar Hack, ESP Wallhack and Recoil Control.',
+    date: 'Aug 18, 2026',
+    readTime: '16 min read',
+    featured: true,
+    author: 'Tarkov Cheats',
+    body: [
+      {
+        type: 'p',
+        text: 'Tarkov Cheats at tarkov-cheats.net sells external Tarkov cheats for PC. Aimbot, loot assist, ESP wallhack, radar and Skin Changer ship in [Tarkov Elite](/products/tarkov-cheats/elite/) with utilities at [products](/products/tarkov-cheats/).',
+      },
+      { type: 'h2', text: 'Aimbot: Smooth Aim and Sticky Aim' },
+      {
+        type: 'p',
+        text: 'Elite includes player aimbot with Bone Priority, Smoothness sliders, and Prediction. Aimbot tracks heads and thorax smoothly for AR sprays, SMG CQB and sniper peeks. Tune delays high at first—90 to 150 ms—then lower them only after clean raid sessions.',
+      },
+      {
+        type: 'p',
+        text: 'Deep weapon examples live in [Aimbot guide](/blog/tarkov-aimbot-combat-guide/) and Labs tuning in [aimbot for live raids](/blog/tarkov-aimbot-raid-guide/).',
+      },
+      { type: 'h2', text: 'Loot Assist and raid automation' },
+      {
+        type: 'p',
+        text: 'Elite unlocks Loot Assist, loot respawn timers, and loadout manager—start conservative per [Elite tier guide](/blog/tarkov-elite-tier-guide/). These modules amplify looting when you already understand extracts.',
+      },
+      { type: 'h2', text: 'ESP wallhack and radar' },
+      {
+        type: 'p',
+        text: 'ESP wallhack covers player ESP, loot piles and containers, sound alerts, and enemy tracking—full setup in [ESP wallhack setup](/blog/tarkov-esp-wallhack-setup/). Start max ESP distance at 1200 units. Pair with [radar hack](/blog/tarkov-radar-hack-guide/).',
+      },
+      { type: 'h2', text: 'Skin Changer, No Recoil and stream-proof' },
+      {
+        type: 'p',
+        text: 'Elite bundles [Skin Changer](/blog/tarkov-skin-changer-guide/) with combat modules; standalone [Unlock All](/products/tarkov-cheats/unlock-all/) is cosmetic-only. No Recoil and Recoil Control finish sprays with Smoothness respect. Creators should enable [stream-proof mode](/blog/tarkov-stream-proof-setup/).',
+      },
+      { type: 'h2', text: 'External loader' },
+      {
+        type: 'p',
+        text: 'Products run external with cloud config sync and BattlEye-aware portal updates. Deep dive: [external cheat guide](/blog/tarkov-external-cheat-guide/).',
+      },
+      {
+        type: 'cta',
+        title: 'Shop Tarkov Elite',
+        text: 'ESP, aimbot, loot assist and more—secure checkout at tarkov-cheats.net.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Guides',
+    title: 'ESP vs aimbot modules: which Tarkov features you need',
+    slug: 'tarkov-lite-vs-pro',
+    image: '/images/blog/tarkov-lite-vs-pro.png',
+    desc: 'Map awareness vs aimbot automation—compare ESP/radar modules with aimbot inside Tarkov Elite before you buy.',
+    date: 'Aug 16, 2026',
+    readTime: '14 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'At tarkov-cheats.net the live product is [Tarkov Elite](/products/tarkov-cheats/elite/) plus utilities. This guide uses Lite vs Pro as shorthand for module sets: Lite-style awareness (ESP, loot, radar) versus Pro-style aimbot automation—all available inside Elite.',
+      },
+      { type: 'h2', text: 'Awareness modules (ESP / radar)' },
+      {
+        type: 'p',
+        text: 'Choose awareness-first settings if you have strong mechanics but lose to smokes and missing loot, or if you stream and want a smaller automation footprint. Awareness covers player ESP, loot locator, loot timers, radar hack, and stream-safe overlay—no Aimbot.',
+      },
+      { type: 'h2', text: 'Aimbot modules' },
+      {
+        type: 'p',
+        text: 'Enable aimbot modules if you play Labs or raids daily on ARs, SMGs, and snipers and want Smooth Aim, Sticky Aim, Bone Priority, and Hotkey macros. Elite includes awareness modules plus aimbot—see the [features guide](/blog/tarkov-cheats-features-guide/).',
+      },
+      { type: 'h2', text: 'Module comparison' },
+      {
+        type: 'p',
+        text: 'Awareness: player ESP, loot and container locator, loot spawn timers, radar hack, team color filter, stream-proof overlay.',
+      },
+      {
+        type: 'p',
+        text: 'Aimbot adds: Aimbot, Smooth Aim, Sticky Aim, Bone Priority, Hotkey macros, Auto Heal, FOV and smoothness dial-in, and more modules in the portal. Elite is additive—you do not lose ESP when you enable aimbot.',
+      },
+      { type: 'h2', text: 'BattlEye considerations' },
+      {
+        type: 'p',
+        text: 'ESP-only layouts carry a lower report surface. Aimbot requires conservative Smoothness sliders from day one. Always follow the [BattlEye patch day checklist](/blog/battleye-patch-day-checklist/) after updates.',
+      },
+      {
+        type: 'cta',
+        title: 'Get Tarkov Elite',
+        text: 'ESP, aimbot, loot assist and more in one Elite build—secure checkout at tarkov-cheats.net.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Guides',
+    title: 'Elite tier guide: when to upgrade your tarkov cheats',
+    slug: 'tarkov-elite-tier-guide',
+    image: '/images/blog/tarkov-elite-tier-guide.png',
+    desc: 'Loot Assist, No Recoil, Skin Changer and full ESP wallhack—who Elite is for and how to tune safely.',
+    date: 'Aug 16, 2026',
+    readTime: '14 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Elite is the private Tarkov cheats build at tarkov-cheats.net—limited slots, priority patch queue, ESP wallhack, aimbot, loot assist, No Recoil, Recoil Control, and Skin Changer.',
+      },
+      { type: 'h2', text: 'What Elite includes' },
+      {
+        type: 'p',
+        text: 'Loot Assist, No Recoil, Recoil Control, complete ESP wallhack, Skin Changer, loadout manager, and direct Discord support. Patch delivery hits Elite first when BattlEye or game updates land.',
+      },
+      { type: 'h2', text: 'Who should buy Elite' },
+      {
+        type: 'p',
+        text: 'Buy Elite when you want the full toolkit in one license. Start with portal conservative presets—not max automation on day one. If ESP alone is enough for your playstyle, leave aimbot off inside Elite.',
+      },
+      { type: 'h2', text: 'Safe Elite tuning' },
+      {
+        type: 'p',
+        text: 'Test No Recoil offline before live raids. Enable Loot Assist only when you understand extract timing. ESP: start at 1200 unit max; expand after clean games. Details: [ESP wallhack setup](/blog/tarkov-esp-wallhack-setup/).',
+      },
+      {
+        type: 'cta',
+        title: 'Checkout Tarkov Elite',
+        text: 'Limited slots, priority patches, full module suite—secure checkout at tarkov-cheats.net.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Setup',
+    title: 'Escape from Tarkov aimbot for live raids',
+    slug: 'tarkov-aimbot-raid-guide',
+    image: '/images/blog/tarkov-aimbot-raid-guide.png',
+    desc: 'Aimbot, Prediction and Hotkey macros configs for surviving high-tier loot runs with Elite Tarkov cheats.',
+    date: 'Aug 15, 2026',
+    readTime: '16 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Labs Escape from Tarkov aimbot works better with smooth tracking than instant snaps that get you reported. [Tarkov Elite](/products/tarkov-cheats/elite/) ships Bone Priority, Prediction, Smoothness sliders, and Hotkey macros tuned for high-tier loot lobbies.',
+      },
+      { type: 'h2', text: 'Start with portal Labs presets' },
+      {
+        type: 'p',
+        text: 'Load the Labs preset in your operator portal before customizing. Presets use high aimbot smoothness and chest-priority targeting. Save a copy as my_Labs before edits.',
+      },
+      { type: 'h2', text: 'Prediction and Bone Priority' },
+      {
+        type: 'p',
+        text: 'Prediction leads moving targets for sprays and peeks. Bone Priority picks the lowest HP player in range or your focus-fire call target. Prefer visible PMCs over scavs when you want PvP priority.',
+      },
+      { type: 'h2', text: 'Hotkey macros and per-weapon profiles' },
+      {
+        type: 'p',
+        text: 'Bind macros to heal or stim before a push when three enemies are within radius—add 80–120 ms delay. Save separate profiles for AR, SMG, and sniper—examples in [Aimbot guide](/blog/tarkov-aimbot-combat-guide/).',
+      },
+      { type: 'h2', text: 'Patch day discipline' },
+      {
+        type: 'p',
+        text: 'After every Escape from Tarkov update, run the [BattlEye patch day checklist](/blog/battleye-patch-day-checklist/) before live raids. Verify tracking offline before you queue.',
+      },
+      {
+        type: 'cta',
+        title: 'Deploy Elite aimbot',
+        text: 'Get Tarkov Elite via secure checkout. Pair aimbot with ESP wallhack for live raids.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Setup',
+    title: 'ESP wallhack setup for Escape from Tarkov live raids',
+    slug: 'tarkov-esp-wallhack-setup',
+    image: '/images/blog/tarkov-esp-wallhack-setup.png',
+    desc: 'Enemy position tracking, loot ESP, sound alerts and vision detector tuning for Elite tiers.',
+    date: 'Aug 15, 2026',
+    readTime: '14 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'ESP wallhack modules on [Tarkov Elite](/products/tarkov-cheats/elite/) show enemy positions, loot piles, and loot timers outside normal vision—if configured cleanly. Cluttered ESP loses games.',
+      },
+      { type: 'h2', text: 'Player ESP defaults' },
+      {
+        type: 'p',
+        text: 'Enable player ESP with PMC/Scav color filters. Start max distance at 1200 units; expand to 1800 only after a week of clean sessions. Turn off portrait spam until the layout feels natural.',
+      },
+      { type: 'h2', text: 'Loot and container ESP' },
+      {
+        type: 'p',
+        text: 'Loot ESP highlights piles and containers with distinct icons. Filter by value so sight lines stay visible. Pair with [radar hack](/blog/tarkov-radar-hack-guide/) for camera range plus enemy dots.',
+      },
+      { type: 'h2', text: 'Sound alerts and stream-proof' },
+      {
+        type: 'p',
+        text: 'Enable approach alerts at medium sensitivity. Creators should enable [stream-proof mode](/blog/tarkov-stream-proof-setup/) and test a local OBS recording before going live.',
+      },
+      {
+        type: 'cta',
+        title: 'Get ESP wallhack on Elite',
+        text: 'Readable overlays and conservative ranges—secure checkout at tarkov-cheats.net.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Setup',
+    title: 'Radar hack guide for Escape from Tarkov',
+    slug: 'tarkov-radar-hack-guide',
+    image: '/images/blog/tarkov-radar-hack-guide.png',
+    desc: 'Mini-radar, FOV awareness and safe distance caps for PMC raids and Scav runs.',
+    date: 'Aug 14, 2026',
+    readTime: '12 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Radar hack on [Tarkov Elite](/products/tarkov-cheats/elite/) extends awareness beyond your screen—enemy dots, extract pressure cues, and hotspot markers for Customs, Labs and Factory.',
+      },
+      { type: 'h2', text: 'Radar defaults' },
+      {
+        type: 'p',
+        text: 'Keep mini-radar readable: enemy dots on, cluttered loot timers off until extract clears feel clean. Cap zoom so you can still track your PMC in tight Factory rooms.',
+      },
+      { type: 'h2', text: 'Pair with ESP' },
+      {
+        type: 'p',
+        text: 'Radar plus [ESP wallhack](/blog/tarkov-esp-wallhack-setup/) beats either alone. Practice rotating with radar dots, not tunnel vision on boxes.',
+      },
+      {
+        type: 'cta',
+        title: 'Enable radar on Elite',
+        text: 'Map awareness modules ship with Tarkov Elite—secure checkout.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Guides',
+    title: 'Skin changer and Unlock All for Escape from Tarkov',
+    slug: 'tarkov-skin-changer-guide',
+    image: '/images/blog/tarkov-skin-changer-guide.png',
+    desc: 'Preview skins, armor and exclusive sets locally with our Unlock All Skin Changer module.',
+    date: 'Aug 14, 2026',
+    readTime: '12 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Skin Changer on [Elite](/products/tarkov-cheats/elite/) and standalone [Unlock All](/products/tarkov-cheats/unlock-all/) let you preview weapons, armor and gear skins locally. Other players still see your real inventory.',
+      },
+      { type: 'h2', text: 'Browse and preview workflow' },
+      {
+        type: 'p',
+        text: 'Open the cosmetic panel, favorite sets, and export configs. Restore defaults before live streams if you want a clean look. Streamers should also test [stream-proof](/blog/tarkov-stream-proof-setup/) for ESP overlays separately.',
+      },
+      { type: 'h2', text: 'Limits' },
+      {
+        type: 'p',
+        text: 'Unlock All does not grant stash items or Battlestate store purchases. Cosmetic modules carry the same third-party risk as any Tarkov cheat—read status before use.',
+      },
+      {
+        type: 'cta',
+        title: 'Get Skin Changer',
+        text: 'Included with Elite or buy Unlock All alone—secure checkout.',
+        href: '/products/tarkov-cheats/unlock-all/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Setup',
+    title: 'BattlEye patch day checklist for Tarkov cheats',
+    slug: 'battleye-patch-day-checklist',
+    image: '/images/blog/battleye-patch-day-checklist.png',
+    desc: 'Status banner, loader reload and conservative profiles after every Escape from Tarkov or BattlEye update.',
+    date: 'Aug 13, 2026',
+    readTime: '12 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Every Escape from Tarkov game patch and BattlEye update can break loader offsets. Operators who queue Labs immediately with outdated builds are first flagged.',
+      },
+      { type: 'h2', text: 'Check status before launch' },
+      {
+        type: 'p',
+        text: 'Open tarkov-cheats.net and read the live status banner. Check Discord #status. Yellow or red means wait—do not queue Labs until green or staff post reload instructions.',
+      },
+      { type: 'h2', text: 'Reload loader and verify offline' },
+      {
+        type: 'p',
+        text: 'Download the latest build from the operator portal. Reload Labs presets. Run a five-minute offline raid to confirm ESP distances and aimbot tracking. If overlays misalign, stop and open Discord.',
+      },
+      { type: 'h2', text: 'Conservative first session' },
+      {
+        type: 'p',
+        text: 'After patches, use ESP-only or high-delay aimbot—no max No Recoil on day zero. If you see verify errors, read [BattlEye unable to verify](/blog/battleye-bypass-tarkov-guide/) before assuming a ban.',
+      },
+      {
+        type: 'cta',
+        title: 'Stay current on Elite',
+        text: 'Priority patch queue ships with Tarkov Elite—secure checkout.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Guides',
+    title: 'HWID spoofer vs new account after a BattlEye ban',
+    slug: 'tarkov-hwid-spoofer-after-ban',
+    image: '/images/blog/tarkov-hwid-spoofer-after-ban.png',
+    desc: 'When to spoof hardware, when to start fresh, and how tarkov-cheats.net products fit each path.',
+    date: 'Aug 13, 2026',
+    readTime: '12 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'After a BattlEye hardware ban, choose carefully: [HWID Spoofer](/products/tarkov-cheats/hwid-spoofer/), a new PC path, or a fresh account. Spoofing does not fix account-only restrictions—see [UGC](/products/tarkov-cheats/ugc/) for appeal workflows.',
+      },
+      { type: 'h2', text: 'When to spoof' },
+      {
+        type: 'p',
+        text: 'Use the spoofer when fresh Battlestate accounts fail instantly on one PC but work elsewhere. Follow the portal restore-point checklist and cold reboot before launching Escape from Tarkov.',
+      },
+      { type: 'h2', text: 'When to start fresh' },
+      {
+        type: 'p',
+        text: 'If the account is restricted and hardware is clean, spoofing will not help. Use UGC for structured appeals or accept a new account on clean hardware.',
+      },
+      {
+        type: 'cta',
+        title: 'HWID Spoofer',
+        text: 'Portal setup guide and Discord support—secure checkout.',
+        href: '/products/tarkov-cheats/hwid-spoofer/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Guides',
+    title: 'How to buy Tarkov cheats in 2026',
+    slug: 'how-to-buy-tarkov-cheats-2026',
+    image: '/images/blog/how-to-buy-tarkov-cheats-2026.png',
+    desc: 'Step-by-step purchase walkthrough for Tarkov Elite and utilities via our secure checkout.',
+    date: 'Aug 12, 2026',
+    readTime: '12 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Buying Tarkov cheats in 2026 runs through tarkov-cheats.net product pages and secure checkout—no sketchy DM payments.',
+      },
+      { type: 'h2', text: 'Step 1: Pick your product' },
+      {
+        type: 'p',
+        text: 'Open [products](/products/tarkov-cheats/). Choose [Tarkov Elite](/products/tarkov-cheats/elite/) for ESP, aimbot and loot assist, or add [HWID Spoofer](/products/tarkov-cheats/hwid-spoofer/), [UGC](/products/tarkov-cheats/ugc/), or [Unlock All](/products/tarkov-cheats/unlock-all/). Unsure on modules? Read [ESP vs aimbot](/blog/tarkov-lite-vs-pro/).',
+      },
+      { type: 'h2', text: 'Step 2: Secure checkout and portal' },
+      {
+        type: 'p',
+        text: 'Complete checkout with the email you will use for support. Portal unlocks loader download, setup guide, config library, and HWID reset tools. Download the latest patch build only from the portal.',
+      },
+      { type: 'h2', text: 'Step 3: First launch' },
+      {
+        type: 'p',
+        text: 'Follow the portal guide: launch external loader, load a Labs preset, test in an offline raid, then check status before live queues. Never first-session on patch day—see the [BattlEye checklist](/blog/battleye-patch-day-checklist/).',
+      },
+      {
+        type: 'cta',
+        title: 'Start checkout',
+        text: 'Pick Elite or a utility and complete secure checkout in minutes.',
+        href: '/go/tarkov/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Setup',
+    title: 'Aimbot guide: AR, SMG and sniper',
+    slug: 'tarkov-aimbot-combat-guide',
+    image: '/images/blog/tarkov-aimbot-combat-guide.png',
+    desc: 'Per-weapon aimbot profiles for Elite—AR sprays, SMG CQB and sniper peeks for live raids.',
+    date: 'Aug 12, 2026',
+    readTime: '15 min read',
+    body: [
+      {
+        type: 'p',
+        text: '[Tarkov Elite](/products/tarkov-cheats/elite/) aimbot shines on timing-heavy loadouts. AR sprays, SMG CQB and sniper peeks are Labs staples—tune smoothness and bone priority per weapon instead of one global snap.',
+      },
+      { type: 'h2', text: 'Per-weapon aimbot on Elite' },
+      {
+        type: 'p',
+        text: 'Save separate portal profiles for AR, SMG, shotgun and sniper. Hotkey swap in-match without reopening the loader. Test each profile offline before live raids.',
+      },
+      { type: 'h2', text: 'AR profile' },
+      {
+        type: 'p',
+        text: 'Enable Aimbot with moderate FOV and high smoothness for mid-range sprays. Bone Priority on torso for spray transfer, chest for first peeks. Practice the spray pattern offline before enabling aimbot.',
+      },
+      { type: 'h2', text: 'SMG tracking' },
+      {
+        type: 'p',
+        text: 'Closer FOV, sticky aim on, smoothness slightly lower than AR. Hotkey macros can fire heals or stims when three enemies are within radius—add 80–120 ms delay.',
+      },
+      { type: 'h2', text: 'Sniper peeks' },
+      {
+        type: 'p',
+        text: 'Tight FOV, bone priority torso/chest, short sticky window. Pair with [radar](/blog/tarkov-radar-hack-guide/) so you do not push into a stacked squad.',
+      },
+      {
+        type: 'cta',
+        title: 'Get Elite weapon aimbot',
+        text: 'AR, SMG, sniper profiles and more—secure checkout at tarkov-cheats.net.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Troubleshooting',
+    title: 'BattlEye was unable to verify Escape from Tarkov',
+    slug: 'battleye-bypass-tarkov-guide',
+    image: '/images/blog/battleye-bypass-tarkov-guide.png',
+    desc: 'Fix verification errors, file integrity checks and when to use Account Recovery after BattlEye issues.',
+    date: 'Aug 11, 2026',
+    readTime: '14 min read',
+    body: [
+      {
+        type: 'p',
+        text: '“BattlEye was unable to verify your installation” blocks Escape from Tarkov launch—not always a ban. File corruption, stuck BattlEye modules, or conflicting software cause most cases.',
+      },
+      { type: 'h2', text: 'Verify game files' },
+      {
+        type: 'p',
+        text: 'Use the launcher verify integrity tools and restart Battlestate as administrator. Retry a vanilla launch before any cheat loader runs.',
+      },
+      { type: 'h2', text: 'Cold boot and conflicts' },
+      {
+        type: 'p',
+        text: 'Exit Battlestate fully, cold reboot, and disable overlay injectors or old cheat remnants temporarily. See [external cheat guide](/blog/tarkov-external-cheat-guide/) for clean loader order.',
+      },
+      { type: 'h2', text: 'When it is a ban' },
+      {
+        type: 'p',
+        text: 'Persistent failure on every account after a clean reinstall may indicate restriction. [UGC](/products/tarkov-cheats/ugc/) helps structured appeals—not instant unban guarantees. HWID spoof does not fix corrupt-file verify errors.',
+      },
+      {
+        type: 'cta',
+        title: 'UGC appeal tools',
+        text: 'Structured appeal workflows for restrictions—secure checkout.',
+        href: '/go/ugc/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Guides',
+    title: 'Escape from Tarkov external cheat guide',
+    slug: 'tarkov-external-cheat-guide',
+    image: '/images/blog/tarkov-external-cheat-guide.png',
+    desc: 'Why external tarkov cheats matter, how the external loader works on PC and what makes private software safer than free tools.',
+    date: 'Aug 11, 2026',
+    readTime: '14 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'External Tarkov cheats read game state from outside the Escape from Tarkov process—no DLL injection into the client. [Products](/products/tarkov-cheats/) at tarkov-cheats.net pair an external loader with overlay rendering, cloud config sync, and BattlEye-aware patch delivery.',
+      },
+      { type: 'h2', text: 'External vs internal' },
+      {
+        type: 'p',
+        text: 'Internal cheats hook inside the process and are easier to signature. External architecture keeps the loader separate; overlays draw on top; aimbot sends smooth input. Risk is never zero, but footprint is lower than public internals.',
+      },
+      { type: 'h2', text: 'Loader order and safety' },
+      {
+        type: 'p',
+        text: 'Launch the external loader before Escape from Tarkov per the portal guide. After patches, follow the [BattlEye checklist](/blog/battleye-patch-day-checklist/). [Elite](/products/tarkov-cheats/elite/) gates modules in one dashboard.',
+      },
+      {
+        type: 'cta',
+        title: 'Get external cheats',
+        text: 'Tarkov Elite through secure checkout at tarkov-cheats.net.',
+        href: '/go/tarkov/',
+      },
+      ...footerBlocks,
+    ],
+  },
+  {
+    tag: 'Setup',
+    title: 'Stream-proof overlay setup for Escape from Tarkov',
+    slug: 'tarkov-stream-proof-setup',
+    image: '/images/blog/tarkov-stream-proof-setup.png',
+    desc: 'Hide ESP wallhack and script overlays from OBS, Game Bar and cards—test workflow for content creators.',
+    date: 'Aug 10, 2026',
+    readTime: '12 min read',
+    body: [
+      {
+        type: 'p',
+        text: 'Streaming Escape from Tarkov with visible ESP or menus risks platform bans. Stream-proof mode on [Tarkov Elite](/products/tarkov-cheats/elite/) hides overlays from OBS and Game Bar while keeping ESP on your monitor.',
+      },
+      { type: 'h2', text: 'Enable and test' },
+      {
+        type: 'p',
+        text: 'Toggle stream-proof in the loader before launching OBS. Record 30 seconds locally—playback must show a clean feed with no loot dots or player ESP. Test game capture and display capture separately.',
+      },
+      { type: 'h2', text: 'Limits' },
+      {
+        type: 'p',
+        text: 'Stream-proof hides overlays from capture; it does not make calling out hidden info legit on stream. Hardware capture cards may still show overlays depending on signal path—test your cable chain.',
+      },
+      {
+        type: 'cta',
+        title: 'Get stream-proof Elite',
+        text: 'Hide ESP from OBS while playing with awareness—secure checkout.',
+        href: '/products/tarkov-cheats/elite/',
+      },
+      ...footerBlocks,
+    ],
+  },
+];

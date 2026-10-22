@@ -1,0 +1,197 @@
+---
+import type { ProductSlide } from '../data/products';
+import ResponsiveImage from './ResponsiveImage.astro';
+import {
+  DEFAULT_IMAGE_WIDTHS,
+  defaultWebpSrc,
+  responsiveSrcSet,
+  THUMB_IMAGE_WIDTHS,
+} from '../utils/responsiveImage';
+import { Badge } from '@/components/starwind/badge';
+
+interface Props {
+  images: ProductSlide[];
+  id?: string;
+}
+
+const { images, id = 'product-screenshots' } = Astro.props;
+const hasThumbs = images.length > 1;
+const first = images[0];
+const mainSizes = '(min-width: 1024px) 640px, 100vw';
+---
+
+<div
+  class:list={['product-gallery', !hasThumbs && 'product-gallery--single']}
+  id={id}
+  data-product-gallery
+  data-gallery-autoplay={hasThumbs ? 'true' : undefined}
+  data-gallery-delay="4500"
+>
+  <div class="relative min-w-0 overflow-hidden rounded-xl border border-border bg-muted/20">
+    <div class="product-gallery__main cursor-zoom-in overflow-hidden">
+      {
+        first && (
+          <ResponsiveImage
+            src={first.src}
+            alt={first.alt}
+            width={960}
+            height={540}
+            loading="eager"
+            fetchPriority="high"
+            sizes={mainSizes}
+            class="product-gallery__image aspect-video w-full object-cover"
+          />
+        )
+      }
+    </div>
+    <Badge
+      tone="neutral"
+      appearance="frosted"
+      size="sm"
+      class="pointer-events-none absolute bottom-3 left-3 shadow-sm"
+    >
+      Screenshot from the build
+    </Badge>
+  </div>
+
+  {
+    hasThumbs && (
+      <div class="product-gallery__thumbs" role="tablist" aria-label="Product screenshots">
+        {images.map((img, i) => (
+          <button
+            type="button"
+            class:list={['product-gallery__thumb', i === 0 && 'is-active']}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            aria-label={`Screenshot ${i + 1}`}
+            data-product-gallery-thumb
+            data-index={i}
+            data-src={defaultWebpSrc(img.src, DEFAULT_IMAGE_WIDTHS)}
+            data-srcset={responsiveSrcSet(img.src, DEFAULT_IMAGE_WIDTHS)}
+            data-sizes={mainSizes}
+            data-alt={img.alt}
+          >
+            <ResponsiveImage
+              src={img.src}
+              alt={img.alt}
+              width={320}
+              height={180}
+              widths={THUMB_IMAGE_WIDTHS}
+              loading="lazy"
+              sizes="148px"
+              class="size-full object-cover"
+            />
+          </button>
+        ))}
+      </div>
+    )
+  }
+</div>
+
+<script>
+  const AUTOPLAY_MS_DEFAULT = 4500;
+
+  function showGallerySlide(
+    root: HTMLElement,
+    main: HTMLImageElement,
+    thumbs: HTMLButtonElement[],
+    index: number,
+  ) {
+    const thumb = thumbs[index];
+    if (!thumb) return;
+
+    const src = thumb.getAttribute('data-src');
+    const srcset = thumb.getAttribute('data-srcset');
+    const sizes = thumb.getAttribute('data-sizes');
+    const alt = thumb.getAttribute('data-alt');
+
+    const picture = main.closest('picture');
+    const source = picture?.querySelector('source');
+
+    if (srcset) {
+      if (source) source.setAttribute('srcset', srcset);
+      main.srcset = srcset;
+    }
+    if (sizes) {
+      if (source) source.setAttribute('sizes', sizes);
+      main.sizes = sizes;
+    }
+    if (src) main.src = src;
+    if (alt) main.alt = alt;
+
+    thumbs.forEach((t, i) => {
+      const active = i === index;
+      t.classList.toggle('is-active', active);
+      t.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    root.dataset.activeIndex = String(index);
+  }
+
+  const initProductGalleries = () => {
+    document.querySelectorAll<HTMLElement>('[data-product-gallery]').forEach((root) => {
+      if (root.dataset.galleryBound === 'true') return;
+      root.dataset.galleryBound = 'true';
+
+      const main = root.querySelector<HTMLImageElement>('.product-gallery__image');
+      const thumbs = Array.from(
+        root.querySelectorAll<HTMLButtonElement>('[data-product-gallery-thumb]'),
+      );
+      if (!main || !thumbs.length) return;
+
+      let activeIndex = 0;
+      root.dataset.activeIndex = '0';
+
+      const goTo = (index: number) => {
+        activeIndex = ((index % thumbs.length) + thumbs.length) % thumbs.length;
+        showGallerySlide(root, main, thumbs, activeIndex);
+      };
+
+      thumbs.forEach((thumb, i) => {
+        thumb.addEventListener('click', () => {
+          goTo(i);
+          restartAutoplay();
+        });
+      });
+
+      let timer: number | null = null;
+      const delay = Number(root.dataset.galleryDelay) || AUTOPLAY_MS_DEFAULT;
+      const wantsAutoplay = root.dataset.galleryAutoplay === 'true' && thumbs.length > 1;
+
+      const stopAutoplay = () => {
+        if (timer != null) {
+          window.clearInterval(timer);
+          timer = null;
+        }
+      };
+
+      const startAutoplay = () => {
+        if (!wantsAutoplay) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        stopAutoplay();
+        timer = window.setInterval(() => {
+          if (document.hidden) return;
+          goTo(activeIndex + 1);
+        }, delay);
+      };
+
+      const restartAutoplay = () => {
+        stopAutoplay();
+        startAutoplay();
+      };
+
+      root.addEventListener('mouseenter', stopAutoplay);
+      root.addEventListener('mouseleave', startAutoplay);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) stopAutoplay();
+        else startAutoplay();
+      });
+
+      startAutoplay();
+    });
+  };
+
+  initProductGalleries();
+  document.addEventListener('astro:page-load', initProductGalleries);
+  document.addEventListener('astro:after-swap', initProductGalleries);
+</script>

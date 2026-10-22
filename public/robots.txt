@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /go/
+
+Sitemap: https://tarkov-cheats.net/sitemap.xml
+Sitemap: https://tarkov-cheats.net/sitemap-pages.xml
+Sitemap: https://tarkov-cheats.net/sitemap-products.xml
+Sitemap: https://tarkov-cheats.net/sitemap-blog.xml
+
+# RSS: https://tarkov-cheats.net/rss.xml
