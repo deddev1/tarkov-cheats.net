@@ -1,5 +1,5 @@
 # Static Astro site — do not auto-add @astrojs/cloudflare (keeps output in dist/).
-name = "tarkovcheats-net"
+name = "tarkov-cheats-net"
 compatibility_date = "2025-10-11"
 
 [assets]

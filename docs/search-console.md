@@ -6,7 +6,9 @@ You verify the domain at your DNS provider—no HTML meta tags in the repo.
 
 Canonical host is apex **`https://tarkov-cheats.net`** (no www).
 
-1. On the **`tarkov-cheats.net`** zone: ensure www → apex 301 (also in `public/_redirects` for this project).
+Workers Assets `public/_redirects` **cannot** use absolute host from-URLs (deploy fails with “Only relative URLs are allowed”). Set host rules in the Cloudflare dashboard instead:
+
+1. On the **`tarkov-cheats.net`** zone: Redirect Rule www → apex (`https://www.tarkov-cheats.net/*` → `https://tarkov-cheats.net/$1`, 301).
 2. On the **`tarkov-cheats.com`** zone (if you own it): Redirect Rules / Bulk Redirects must send both apex and www `.com` to `https://tarkov-cheats.net/$1` — **not** to `https://www.tarkov-cheats.com/`.
 3. After deploy, smoke-check:
 
