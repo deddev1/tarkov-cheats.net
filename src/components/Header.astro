@@ -1,6 +1,6 @@
 ---
 import { t } from '../i18n';
-import { checkoutPath } from '../config/checkout';
+import { CHECKOUT_LINK_REL, checkoutPath } from '../config/checkout';
 import { Button } from '@/components/starwind/button';
 import AnimatedThemeSwitch from './AnimatedThemeSwitch.astro';
 import {
@@ -51,7 +51,7 @@ const purchaseUrl = checkoutPath('tarkov');
 
     <div class="flex items-center gap-2">
       <div class="hidden items-center sm:flex">
-        <SlideRevealButton href={purchaseUrl} class="hidden lg:inline-flex" ariaLabel={t.ui.checkoutAria}>
+        <SlideRevealButton href={purchaseUrl} rel={CHECKOUT_LINK_REL} class="hidden lg:inline-flex" ariaLabel={t.ui.checkoutAria}>
           {t.ui.browseCheats}
         </SlideRevealButton>
         <div class="nav-action-divider hidden items-center px-3 lg:flex" aria-hidden="true">
@@ -84,7 +84,7 @@ const purchaseUrl = checkoutPath('tarkov');
               </a>
             ))}
           </nav>
-          <Button as="a" href={purchaseUrl} variant="primary" class="w-full justify-center" aria-label={t.ui.checkoutAria}>
+          <Button as="a" href={purchaseUrl} rel={CHECKOUT_LINK_REL} variant="primary" class="w-full justify-center" aria-label={t.ui.checkoutAria}>
             {t.ui.browseCheatsMobile}
           </Button>
           <div class="flex justify-center pt-1">

@@ -1,5 +1,6 @@
 ---
 import type { ProductPage } from '../../data/products';
+import { CHECKOUT_LINK_REL } from '../../config/checkout';
 import {
   checkoutUrlWithPlan,
   formatPlanPrice,
@@ -73,6 +74,7 @@ const isSinglePlan = plans.length === 1;
       <Button
         as="a"
         href={checkoutUrlWithPlan(product.buyUrl, defaultPlan.id)}
+        rel={CHECKOUT_LINK_REL}
         variant="primary"
         size="lg"
         class="w-full rounded-xl"

@@ -10,7 +10,7 @@ import {
   breadcrumbSchema,
   parseBlogDate,
 } from '../../utils/schema';
-import { checkoutPath, resolveCheckoutHref } from '../../config/checkout';
+import { CHECKOUT_LINK_REL, checkoutPath, resolveCheckoutHref } from '../../config/checkout';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ResponsiveImage from '../../components/ResponsiveImage.astro';
 import BlogSidebar from '../../components/BlogSidebar.astro';
@@ -183,7 +183,7 @@ const published = parseBlogDate(post.date);
           </Prose>
 
           <nav class="blog-article__actions" aria-label="Continue reading">
-            <Button as="a" href={checkoutPath('tarkov')} variant="primary" aria-label={t.ui.checkoutAria}>
+            <Button as="a" href={checkoutPath('tarkov')} rel={CHECKOUT_LINK_REL} variant="primary" aria-label={t.ui.checkoutAria}>
               Buy Tarkov Cheats
               <Icon name="arrowRight" size={17} />
             </Button>

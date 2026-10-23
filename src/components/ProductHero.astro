@@ -1,6 +1,7 @@
 ---
 import type { ProductAcquisition, ProductOverview, ProductSlide } from '../data/products';
 import { acquisitionStepIcons } from '../data/sectionIcons';
+import { CHECKOUT_LINK_REL } from '../config/checkout';
 import Icon from './icons/Icon.astro';
 import { Button } from '@/components/starwind/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/starwind/card';
@@ -31,7 +32,7 @@ const { overview, acquisition, buyUrl } = Astro.props;
       <CardTitle class="normal-case">{acquisition.title}</CardTitle>
     </CardHeader>
     <CardContent class="space-y-6">
-      <Button as="a" href={buyUrl} variant="primary" class="w-full">
+      <Button as="a" href={buyUrl} rel={CHECKOUT_LINK_REL} variant="primary" class="w-full">
         Buy Now
         <Icon name="arrowRight" size={17} />
       </Button>

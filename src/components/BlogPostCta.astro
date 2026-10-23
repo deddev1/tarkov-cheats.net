@@ -1,4 +1,5 @@
 ---
+import { CHECKOUT_LINK_REL } from '../config/checkout';
 import Icon from './icons/Icon.astro';
 import { Button } from '@/components/starwind/button';
 
@@ -9,6 +10,7 @@ interface Props {
 }
 
 const { title, html, href } = Astro.props;
+const isCheckout = href.startsWith('/go/');
 ---
 
 <aside class="blog-post-cta not-prose my-8" aria-label={title}>
@@ -18,7 +20,14 @@ const { title, html, href } = Astro.props;
   <div class="blog-post-cta__body">
     <h3 class="blog-post-cta__title">{title}</h3>
     <div class="blog-post-cta__text" set:html={html} />
-    <Button as="a" href={href} variant="primary" size="sm" class="blog-post-cta__btn justify-start">
+    <Button
+      as="a"
+      href={href}
+      rel={isCheckout ? CHECKOUT_LINK_REL : undefined}
+      variant="primary"
+      size="sm"
+      class="blog-post-cta__btn justify-start"
+    >
       Buy now
       <Icon name="arrowRight" size={16} />
     </Button>

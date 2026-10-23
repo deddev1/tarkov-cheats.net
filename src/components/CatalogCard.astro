@@ -1,6 +1,7 @@
 ---
 import type { IconName } from './icons/types';
 import Icon from './icons/Icon.astro';
+import { CHECKOUT_LINK_REL } from '../config/checkout';
 import { Badge } from '@/components/starwind/badge';
 import { Button } from '@/components/starwind/button';
 import {
@@ -103,7 +104,7 @@ const statusBadgeIcon = (text: string): IconName => {
     </ul>
   </CardContent>
   <CardFooter class="flex flex-col gap-2 sm:flex-row">
-    <Button as="a" href={buyUrl} variant="primary" size="sm" class="w-full sm:flex-1">
+    <Button as="a" href={buyUrl} rel={CHECKOUT_LINK_REL} variant="primary" size="sm" class="w-full sm:flex-1">
       {buyLabel}
       <Icon name="arrowRight" size={17} />
     </Button>

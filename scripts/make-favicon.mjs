@@ -14,10 +14,17 @@ const meta = await sharp(src).metadata();
 console.log('source', meta.width, meta.height, meta.format);
 
 async function png(size) {
-  return sharp(src)
-    .resize(size, size, { fit: 'cover', position: 'centre' })
-    .png({ compressionLevel: 9 })
-    .toBuffer();
+  const pipeline = sharp(src).resize(size, size, { fit: 'cover', position: 'centre' });
+  // Large PNGs (schema logo / PWA) use palette to stay under crawl size thresholds.
+  if (size >= 512) {
+    return pipeline
+      .png({ compressionLevel: 9, palette: true, quality: 55, colors: 128, effort: 10 })
+      .toBuffer();
+  }
+  if (size >= 180) {
+    return pipeline.png({ compressionLevel: 9, palette: true, quality: 80, effort: 10 }).toBuffer();
+  }
+  return pipeline.png({ compressionLevel: 9 }).toBuffer();
 }
 
 function pngSize(buf) {
@@ -57,6 +64,7 @@ function encodeIco(pngBuffers) {
 const files = {
   'favicon-16.png': 16,
   'favicon-32.png': 32,
+  'favicon-192.png': 192,
   'apple-touch-icon.png': 180,
   'favicon-512.png': 512,
 };

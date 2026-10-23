@@ -43,7 +43,7 @@ const {
 const canonical = canonicalUrl(Astro.url.pathname);
 const ogImageUrl = absoluteAssetUrl(ogImage);
 const robotsContent = noindex
-  ? 'noindex, nofollow'
+  ? 'noindex'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 ---
 

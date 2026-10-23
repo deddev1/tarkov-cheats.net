@@ -27,6 +27,9 @@ export function checkoutPath(product: CheckoutProduct = 'tarkov'): string {
 /** Default product checkout redirect (replaces legacy Discord CTAs). */
 export const PRIMARY_CHECKOUT_PATH = checkoutPath('tarkov');
 
+/** Affiliate checkout links — robots Disallow /go/; do not pass PageRank. */
+export const CHECKOUT_LINK_REL = 'nofollow sponsored';
+
 /** Map internal product slugs to checkout redirect paths. */
 export function checkoutForSlug(slug: string): string {
   switch (slug) {

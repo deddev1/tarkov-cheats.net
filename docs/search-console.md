@@ -18,6 +18,10 @@ curl -sI https://tarkov-cheats.net/ | grep -i content-type
 
 Expect 301 Location to `https://tarkov-cheats.net/...` and `Content-Type: text/html; charset=utf-8` on the apex HTML response.
 
+## Checkout cloaks (`/go/`)
+
+`robots.txt` keeps `Disallow: /go/`. Those paths are affiliate 302 redirects, not indexable pages. Screaming Frog “Blocked by robots.txt” inlinks to `/go/` are **expected** — do not `Allow: /go/`. Buy CTAs use `rel="nofollow sponsored"`.
+
 ## Setup (once)
 
 1. Open [Google Search Console](https://search.google.com/search-console) and add the **domain** property for `tarkov-cheats.net` if it is not already there.

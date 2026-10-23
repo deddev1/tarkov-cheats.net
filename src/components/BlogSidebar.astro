@@ -2,7 +2,7 @@
 import '../styles/blog-sidebar.css';
 import Icon from './icons/Icon.astro';
 import { blogPostPath, productPath, ROUTES } from '../utils/path';
-import { checkoutPath } from '../config/checkout';
+import { CHECKOUT_LINK_REL, checkoutPath } from '../config/checkout';
 import { t } from '../i18n';
 import type { BlogPostFull } from '../data/blog';
 import type { IconName } from './icons/types';
@@ -121,6 +121,7 @@ const productLinks: { label: string; href: string; icon: IconName }[] = [
     <Button
       as="a"
       href={checkoutPath('tarkov')}
+      rel={CHECKOUT_LINK_REL}
       variant="primary"
       size="sm"
       class="blog-sidebar__cta mt-2.5 w-full min-w-0 justify-start"
